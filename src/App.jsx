@@ -8,7 +8,7 @@ function App() {
     <>
     {/* Top nav with links to Home, Art, CS (Sirenia) + CSS poitioniing - top nav is above bg 
     Routes to all other pages
-    Display <Home />
+    Display Active page
     Footer - made with ? by me, Links?*/}
       <Home />
     </>
