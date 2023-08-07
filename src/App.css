@@ -53,4 +53,5 @@
   top: 0;  /* Adjust as needed */
   left: 0; /* Adjust as needed */
   z-index: 1; /* Ensure it's above the main image */
+  width: 100%;
 }
