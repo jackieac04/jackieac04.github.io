@@ -2,6 +2,7 @@ import React from 'react'
 import Web from '/Web.png'
 import Butterflies from '/ButterfliesE.gif'
 import Gmail from '/icons/Gmail.png'
+import LinkedIn from '/icons/LinkedIn.png'
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
             <img className="butterflies" src={ Butterflies } alt="a gif of butterflies overlaying the background image." />
             <a className='gmail-link' href="mailto: jaclyn_cohen@brown.edu">
                 <img  className="gmail" src={ Gmail} alt="the gmail app icon" />
+            </a>
+            <a className="linkedin-link" href="https://www.linkedin.com/in/jaclyn-cohen-1718a4225/">
+                <img className="linkedin" src={ LinkedIn } alt=" the LinkedIn App Logo" />
             </a>
         </div>
         

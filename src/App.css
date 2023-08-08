@@ -17,22 +17,30 @@
   background-repeat: no-repeat;
 }
 
-.gmail-link {
+.gmail-link, .linkedin-link {
   position: absolute;
-  top: 80%; /* Adjust as needed to position the Gmail icon at the desired spot on the Web image */
+  top: 77%; /* Adjust as needed to position the Gmail icon at the desired spot on the Web image */
   bottom: 90%;
-  left: 40%;
-  right: 50%;
-  transform: translate(-50%, -50%); /* Center the icon */
   display: inline-block;
   transition: filter 0.3s ease;
   z-index: 2;
 }
-.gmail {
+
+.linkedin-link {
+  left: 57%;
+  right: 25%;
+  transform: translate(-50%, -50%); /* Center the icon */
+}
+
+.gmail-link {
+  left: 40%;
+  right: 48%;
+}
+.gmail, .linkedin {
   width: 100%;
 }
 
-.gmail-link:hover  .gmail{
+.gmail-link:hover  .gmail, .linkedin-link:hover .linkedin{
   filter: brightness(1.2);
   box-shadow: 10cap;
 }
