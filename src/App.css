@@ -1,3 +1,14 @@
 img {
   width: 100%;
 }
+
+.butterflies {
+  position: absolute;
+  top: 0;  
+  left: 0; 
+  z-index: 1; /* Ensure it's above the main image */
+}
+
+.home-container {
+  position: relative;
+}
