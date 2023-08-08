@@ -16,14 +16,31 @@
   background-size: cover; /* Ensure the background image covers the entire container */
   background-repeat: no-repeat;
 }
+.web-content {
+  display: inline-block;
+  transition: filter 0.3s ease;
+  z-index: 1;
 
+
+}
 .gmail-link, .linkedin-link {
   position: absolute;
   top: 77%; /* Adjust as needed to position the Gmail icon at the desired spot on the Web image */
   bottom: 90%;
-  display: inline-block;
-  transition: filter 0.3s ease;
   z-index: 2;
+}
+
+.ig-link, .discord-link, .github-link {
+position: absolute;
+top: 84%;
+bottom: 90%;
+z-index: 2;
+}
+
+.ig-link {
+  left: 35%;
+  right: 45%;
+  transform: translate(-50%, -50%);
 }
 
 .linkedin-link {
@@ -36,11 +53,13 @@
   left: 40%;
   right: 48%;
 }
-.gmail, .linkedin {
+.gmail, .linkedin, .ig {
   width: 100%;
 }
 
-.gmail-link:hover  .gmail, .linkedin-link:hover .linkedin{
+.gmail-link:hover  .gmail, .linkedin-link:hover .linkedin,
+.ig-link:hover .ig
+{
   filter: brightness(1.2);
   box-shadow: 10cap;
 }

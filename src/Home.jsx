@@ -3,6 +3,7 @@ import Web from '/Web.png'
 import Butterflies from '/ButterfliesE.gif'
 import Gmail from '/icons/Gmail.png'
 import LinkedIn from '/icons/LinkedIn.png'
+import IG from '/icons/IG.png'
 
 export default function Home() {
   return (
@@ -20,7 +21,10 @@ export default function Home() {
                 <img  className="gmail" src={ Gmail} alt="the gmail app icon" />
             </a>
             <a className="linkedin-link" href="https://www.linkedin.com/in/jaclyn-cohen-1718a4225/">
-                <img className="linkedin" src={ LinkedIn } alt=" the LinkedIn App Logo" />
+                <img className="linkedin" src={ LinkedIn } alt=" the LinkedIn app icon" />
+            </a>
+            <a className='ig-link' href="https://instagram.com/leafysheepy">
+                <img className='ig' src={ IG } alt=" the Instagram app icon" />
             </a>
         </div>
         
