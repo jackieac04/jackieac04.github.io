@@ -4,6 +4,8 @@ import Butterflies from '/ButterfliesE.gif'
 import Gmail from '/icons/Gmail.png'
 import LinkedIn from '/icons/LinkedIn.png'
 import IG from '/icons/IG.png'
+import Discord from '/icons/Discord.png'
+import GitHub from '/icons/GitHub.png'
 
 export default function Home() {
   return (
@@ -26,9 +28,13 @@ export default function Home() {
             <a className='ig-link' href="https://instagram.com/leafysheepy">
                 <img className='ig' src={ IG } alt=" the Instagram app icon" />
             </a>
+            <a  className='discord-link' href="https://discord.com/users/leafysheepy">
+                <img className="discord" src={ Discord } alt="the Discord app icon" />
+            </a>
+            <a className='github-link' href="https://github.com/jackieac04">
+                <img className='github' src={ GitHub } alt="the GitHub app icon" />
+            </a>
         </div>
-        
-
     </div>
   )
 }

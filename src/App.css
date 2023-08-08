@@ -20,9 +20,8 @@
   display: inline-block;
   transition: filter 0.3s ease;
   z-index: 1;
-
-
 }
+
 .gmail-link, .linkedin-link {
   position: absolute;
   top: 77%; /* Adjust as needed to position the Gmail icon at the desired spot on the Web image */
@@ -33,8 +32,19 @@
 .ig-link, .discord-link, .github-link {
 position: absolute;
 top: 84%;
-bottom: 90%;
+bottom: 88%;
 z-index: 2;
+}
+
+.github-link {
+  left: 56%;
+  right: 24%;
+  transform: translateY(-10px);
+}
+
+.discord-link {
+  left: 40%;
+  right: 38%;
 }
 
 .ig-link {
@@ -53,12 +63,12 @@ z-index: 2;
   left: 40%;
   right: 48%;
 }
-.gmail, .linkedin, .ig {
+.gmail, .linkedin, .ig, .discord, .github {
   width: 100%;
 }
 
 .gmail-link:hover  .gmail, .linkedin-link:hover .linkedin,
-.ig-link:hover .ig
+.ig-link:hover .ig, .discord-link:hover .discord, .github-link:hover .github
 {
   filter: brightness(1.2);
   box-shadow: 10cap;
