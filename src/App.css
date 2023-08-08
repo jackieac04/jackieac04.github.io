@@ -1,4 +1,4 @@
-img {
+.web, .butterflies {
   width: 100%;
 }
 
@@ -10,5 +10,32 @@ img {
 }
 
 .home-container {
+  width: 100%;
   position: relative;
+  background-image: url('/Web.png');
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-repeat: no-repeat;
 }
+
+.gmail-link {
+  position: absolute;
+  top: 80%; /* Adjust as needed to position the Gmail icon at the desired spot on the Web image */
+  bottom: 90%;
+  left: 40%;
+  right: 50%;
+  transform: translate(-50%, -50%); /* Center the icon */
+  display: inline-block;
+  transition: filter 0.3s ease;
+  z-index: 2;
+}
+.gmail {
+  width: 100%;
+}
+
+.gmail-link:hover  .gmail{
+  filter: brightness(1.2);
+  box-shadow: 10cap;
+}
+
+
+
