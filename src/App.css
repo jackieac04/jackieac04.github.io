@@ -106,14 +106,36 @@
   color: transparent;
 }
 
-h1 {
+.art-link:hover, .cs-link:hover, .home-link:hover {
+  background: linear-gradient(to top, #1a5b83 20%, #f1cee9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* for Safari */
+  color: transparent;
+  filter: brightness(1.5);
+  box-shadow: 10cap;
+}
+
+.welcome, .art, .cs {
   position: absolute;
   top: -260%;
-  left: 30%;
   font-size: 9vw;
   background: linear-gradient(to top, #6fc4fd 20%, #E9F1F7 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; /* for Safari */
   color: transparent;
+
+}
+
+.welcome {
+  left: 32%;
+}
+
+.art {
+  left: 25%;
+}
+
+.cs {
+  left: 28%;
 }

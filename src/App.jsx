@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from 'react-router-dom' 
+import { Routes, Route, Link, useLocation } from 'react-router-dom' 
 import './App.css'
 import Home from './Home'
 import Header from '/Header_.png'
@@ -10,6 +10,7 @@ import Digital from './Digital'
 import Contact from './Contact'
 
 function App() {
+  const location = useLocation();
 
   return (
     <>
@@ -18,7 +19,9 @@ function App() {
       <img className="header-img" src={ Header } alt="the header: blue clouds" />
       <div className="link-container">
   <Link className="home-link" to='/'>Home</Link>
-        <h1>Welcome</h1>
+    {location.pathname === '/' && <h1 className='welcome'>Welcome</h1>}
+    {location.pathname === '/art' && <h1 className='art'>Art Portfolio</h1>}
+    {location.pathname === '/cs' && <h1 className='cs'>CS Projects</h1>}
   <div className="right-links">
     <Link className="art-link" to='/art'>Art</Link>
     <Link className="cs-link" to='/cs'>CS</Link>
