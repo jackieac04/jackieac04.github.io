@@ -52,6 +52,11 @@
   font-style: normal;
   font-size: 3vw;
   text-align: right;
+  background: linear-gradient(to top, #caeafe 20%, #416492 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* for Safari */
+  color: transparent;
 }
 
 .link-hold {
@@ -71,4 +76,44 @@
 .link-hold:hover .f-img, .link-hold:hover .f-img-gmail {
   filter: brightness(1.2);
   box-shadow: 10cap;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 2%;  /* Adjust as needed */
+  left: 2%;
+  right: 2%;
+  z-index: 15; /* Ensure the links appear on top of the image */
+  font-family: "sirenia", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vw;
+  text-decoration: none;
+}
+
+.right-links {
+  display: flex;
+  gap: 1rem; /* or whatever spacing you prefer */
+}
+
+.art-link, .cs-link, .home-link {
+  background: linear-gradient(to top, #caeafe 20%, #dbced8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* for Safari */
+  color: transparent;
+}
+
+h1 {
+  position: absolute;
+  top: -260%;
+  left: 30%;
+  font-size: 9vw;
+  background: linear-gradient(to top, #6fc4fd 20%, #E9F1F7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* for Safari */
+  color: transparent;
 }

@@ -15,7 +15,16 @@ function App() {
     <>
     <div className='app-container'>
     <nav className='header-nav'>
-      <img className="header-img" src={ Header } alt="" />
+      <img className="header-img" src={ Header } alt="the header: blue clouds" />
+      <div className="link-container">
+  <Link className="home-link" to='/'>Home</Link>
+        <h1>Welcome</h1>
+  <div className="right-links">
+    <Link className="art-link" to='/art'>Art</Link>
+    <Link className="cs-link" to='/cs'>CS</Link>
+  </div>
+</div>
+
     </nav>
 
     <Routes>
@@ -31,7 +40,7 @@ function App() {
   </Routes>
       
       <nav className='footer-nav'>
-        <img className='footer-img' src={ Footer } alt="" />
+        <img className='footer-img' src={ Footer } alt="the footer: blue waves" />
         <div className='footer-imgs'>
           <Contact gmailLink={'link-hold'} linkedinLink={'link-hold'} igLink={'link-hold'} discordLink={'link-hold'} githubLink={'link-hold'}
           gmailIcon={'f-img-gmail'} linkedinIcon={'f-img'} igIcon={'f-img'} discordIcon={'f-img'} githubIcon={'f-img'}/>
