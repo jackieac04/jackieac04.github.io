@@ -1,11 +1,7 @@
 import React from 'react'
 import Web from '/Web.png'
 import Butterflies from '/ButterfliesE.gif'
-import Gmail from '/icons/Gmail.png'
-import LinkedIn from '/icons/LinkedIn.png'
-import IG from '/icons/IG.png'
-import Discord from '/icons/Discord.png'
-import GitHub from '/icons/GitHub.png'
+import Contact from './Contact'
 import './Home.css'
 
 export default function Home() {
@@ -20,21 +16,8 @@ export default function Home() {
         That's all for now; happy exploring!' " />
         <div className='web-content'>
             <img className="butterflies" src={ Butterflies } alt="a gif of butterflies overlaying the background image." />
-            <a className='gmail-link' href="mailto: jaclyn_cohen@brown.edu">
-                <img  className="gmail" src={ Gmail} alt="the gmail app icon" />
-            </a>
-            <a className="linkedin-link" href="https://www.linkedin.com/in/jaclyn-cohen-1718a4225/">
-                <img className="linkedin" src={ LinkedIn } alt=" the LinkedIn app icon" />
-            </a>
-            <a className='ig-link' href="https://instagram.com/leafysheepy">
-                <img className='ig' src={ IG } alt=" the Instagram app icon" />
-            </a>
-            <a  className='discord-link' href="https://discord.com/users/leafysheepy">
-                <img className="discord" src={ Discord } alt="the Discord app icon" />
-            </a>
-            <a className='github-link' href="https://github.com/jackieac04">
-                <img className='github' src={ GitHub } alt="the GitHub app icon" />
-            </a>
+            <Contact gmailLink={'gmail-link'} gmailIcon={'gmail'} linkedinLink={'linkedin-link'} linkedinIcon={'linkedin'} igLink={'ig-link'} igIcon={'ig'}
+             discordLink={'discord-link'} discordIcon={'discord'} githubLink={'github-link'} githubIcon={'github'}/>
         </div>
     </div>
   )

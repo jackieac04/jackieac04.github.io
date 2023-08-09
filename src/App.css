@@ -16,6 +16,7 @@
 
 .footer-nav {
   position: absolute;
+  width: 100%;
   top: .4%;
 }
 
@@ -26,8 +27,48 @@
   position: relative;
 }
 
+.footer-imgs {
+  position: absolute;
+  top: 95%; /* Adjust as needed */
+  bottom: 100%;
+  left: 0; /* This places it at the left edge of footer-nav */
+  z-index: 5; /* Ensure it's above the footer-img */
+}
+
 .app-container {
   position: relative;
   width: 100%;
 }
 
+.footer-text {
+  position: absolute;
+  top: 97%; /* Center the text vertically */
+  left: 50%; /* Center the text horizontally */
+  transform: translate(20%, -70%); 
+  z-index: 5; /* Ensure the text appears on top of the image */
+  /* Other styles for the text */
+  font-family: "sirenia", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vw;
+  text-align: right;
+}
+
+.link-hold {
+  position: relative;
+  z-index: 5;
+}
+
+.f-img {
+ width: 8%;
+ position: relative;
+}
+
+.f-img-gmail {
+  width: 5.5%;
+}
+
+.link-hold:hover .f-img, .link-hold:hover .f-img-gmail {
+  filter: brightness(1.2);
+  box-shadow: 10cap;
+}

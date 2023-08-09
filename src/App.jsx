@@ -7,6 +7,7 @@ import Art from './Art'
 import CS from './CS'
 import Traditional from './Traditional'
 import Digital from './Digital'
+import Contact from './Contact'
 
 function App() {
 
@@ -31,6 +32,11 @@ function App() {
       
       <nav className='footer-nav'>
         <img className='footer-img' src={ Footer } alt="" />
+        <div className='footer-imgs'>
+          <Contact gmailLink={'link-hold'} linkedinLink={'link-hold'} igLink={'link-hold'} discordLink={'link-hold'} githubLink={'link-hold'}
+          gmailIcon={'f-img-gmail'} linkedinIcon={'f-img'} igIcon={'f-img'} discordIcon={'f-img'} githubIcon={'f-img'}/>
+        </div>
+        <p className='footer-text'>Made with leaves • Jaclyn Cohen</p>
       </nav>
     </div>
     </>
