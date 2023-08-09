@@ -28,14 +28,14 @@
   position: absolute;
   top: 77%; /* Adjust as needed to position the Gmail icon at the desired spot on the Web image */
   bottom: 90%;
-  z-index: 2;
+  z-index: 5;
 }
 
 .ig-link, .discord-link, .github-link {
 position: absolute;
 top: 84%;
 bottom: 88%;
-z-index: 2;
+z-index: 5;
 }
 
 .github-link {
