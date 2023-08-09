@@ -8,6 +8,7 @@ import CS from './CS'
 import Traditional from './Traditional'
 import Digital from './Digital'
 import Contact from './Contact'
+import DarkMode from './DarkMode'
 
 function App() {
   const location = useLocation();
@@ -22,6 +23,7 @@ function App() {
     {location.pathname === '/' && <h1 className='welcome'>Welcome</h1>}
     {location.pathname === '/art' && <h1 className='art'>Art Portfolio</h1>}
     {location.pathname === '/cs' && <h1 className='cs'>CS Projects</h1>}
+    {location.pathname !== '/' && <DarkMode />}
   <div className="right-links">
     <Link className="art-link" to='/art'>Art</Link>
     <Link className="cs-link" to='/cs'>CS</Link>
@@ -29,6 +31,7 @@ function App() {
 </div>
 
     </nav>
+    <div className='route-content'>
 
     <Routes>
       <Route path='/' element={<Home />}/>
@@ -41,6 +44,7 @@ function App() {
       <Route path='/cs' element={ <CS /> } />
       <Route path='*' element={<h1>Not Found</h1>}/>
   </Routes>
+    </div>
       
       <nav className='footer-nav'>
         <img className='footer-img' src={ Footer } alt="the footer: blue waves" />
