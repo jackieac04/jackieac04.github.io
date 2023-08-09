@@ -6,6 +6,7 @@ import LinkedIn from '/icons/LinkedIn.png'
 import IG from '/icons/IG.png'
 import Discord from '/icons/Discord.png'
 import GitHub from '/icons/GitHub.png'
+import './Home.css'
 
 export default function Home() {
   return (
