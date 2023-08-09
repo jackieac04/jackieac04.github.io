@@ -11,7 +11,9 @@
 
 .home-container {
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 4.8%;
+  left: 0;
   background-image: url('/Web.png');
   background-size: cover; /* Ensure the background image covers the entire container */
   background-repeat: no-repeat;
@@ -72,7 +74,30 @@ z-index: 2;
 {
   filter: brightness(1.2);
   box-shadow: 10cap;
+  width: 110%;
+  transform: translateY(-10px);
 }
 
+.header-img {
+  width: 100%;
+  z-index: 4;
+  position: relative; /* z index only works on positioned elements*/
+}
 
+.footer-nav {
+  position: absolute;
+  top: .4%;
+}
+
+.footer-img {
+  width: 100%;
+  top: -10%;
+  display: block;
+  position: relative;
+}
+
+.app-container {
+  position: relative;
+  width: 100%;
+}
 
