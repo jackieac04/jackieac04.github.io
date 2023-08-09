@@ -19,17 +19,16 @@ function App() {
     <nav className='header-nav'>
       <img className="header-img" src={ Header } alt="the header: blue clouds" />
       <div className="link-container">
-  <Link className="home-link" to='/'>Home</Link>
-    {location.pathname === '/' && <h1 className='welcome'>Welcome</h1>}
-    {location.pathname === '/art' && <h1 className='art'>Art Portfolio</h1>}
-    {location.pathname === '/cs' && <h1 className='cs'>CS Projects</h1>}
-    {location.pathname !== '/' && <DarkMode />}
+        <Link className="home-link" to='/'>Home</Link>
+        {location.pathname !== '/' && <DarkMode />}
+        {location.pathname === '/' && <h1 className='welcome'>Welcome</h1>}
+        {location.pathname === '/art' && <h1 className='art'>Art Portfolio</h1>}
+        {location.pathname === '/cs' && <h1 className='cs'>CS Projects</h1>}
   <div className="right-links">
     <Link className="art-link" to='/art'>Art</Link>
     <Link className="cs-link" to='/cs'>CS</Link>
   </div>
 </div>
-
     </nav>
     <div className='route-content'>
 
@@ -52,7 +51,7 @@ function App() {
           <Contact gmailLink={'link-hold'} linkedinLink={'link-hold'} igLink={'link-hold'} discordLink={'link-hold'} githubLink={'link-hold'}
           gmailIcon={'f-img-gmail'} linkedinIcon={'f-img'} igIcon={'f-img'} discordIcon={'f-img'} githubIcon={'f-img'}/>
         </div>
-        <p className='footer-text'>Made with leaves • Jaclyn Cohen</p>
+        <p className='footer-text'>Made with leafy sheep • Jaclyn Cohen</p>
       </nav>
     </div>
     </>

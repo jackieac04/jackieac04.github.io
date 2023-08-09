@@ -56,7 +56,7 @@
   font-family: "sirenia", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3vw;
+  font-size: 2.5vw;
   text-align: right;
   background: linear-gradient(to top, #caeafe 20%, #416492 100%);
   -webkit-background-clip: text;
@@ -124,7 +124,7 @@
 
 .welcome, .art, .cs {
   position: absolute;
-  top: -260%;
+  top: -100%;
   font-size: 9vw;
   background: linear-gradient(to top, #6fc4fd 20%, #E9F1F7 100%);
   -webkit-background-clip: text;
@@ -132,6 +132,10 @@
   -webkit-text-fill-color: transparent; /* for Safari */
   color: transparent;
 
+}
+
+.welcome {
+  top: -240%;
 }
 
 .welcome {
