@@ -8,18 +8,30 @@ export default function DarkMode() {
 
     useEffect(() => {
         // Set the initial theme based on the data-theme attribute
-        const currentTheme = document.querySelector('body').getAttribute('data-theme');
-        setTheme(currentTheme || 'light');
+       
+        // Retrieve the stored theme from localStorage
+        const selectedTheme = localStorage.getItem("selectedTheme");
+
+        // If a theme is stored in localStorage, use it, otherwise default to 'light'
+        if (selectedTheme) {
+            document.querySelector('body').setAttribute('data-theme', selectedTheme);
+            setTheme(selectedTheme);
+        } else {
+            const currentTheme = document.querySelector('body').getAttribute('data-theme');
+            setTheme(currentTheme || 'light');
+        }
     }, []);
 
     const setDarkMode = () => {
         document.querySelector('body').setAttribute('data-theme', 'dark');
         setTheme('dark');
+        localStorage.setItem("selectedTheme", "dark");
     }
 
     const setLightMode = () => {
         document.querySelector('body').setAttribute('data-theme', 'light');
         setTheme('light');
+        localStorage.setItem("selectedTheme", "light");
     }
 
     const toggleTheme = e => {
@@ -36,8 +48,10 @@ export default function DarkMode() {
                 checked={theme === 'dark'} // set the checkbox state based on the theme
             />
             <label className='dark_mode_label' htmlFor='darkmode-toggle'>
-                {theme === 'dark' ? <img src={Sun} alt="Sun icon" /> : <img src={Moon} alt="Moon icon" />}
+                <img className={theme === 'dark' ? 'visible' : 'hidden'} src={Sun} alt="Sun icon" />
+                <img className={theme === 'light' ? 'visible' : 'hidden'} src={Moon} alt="Moon icon" />
             </label>
+
         </div>
     );
 }

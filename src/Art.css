@@ -1,6 +1,15 @@
 :root {
     --bg-color: #9bc0dc;
-    --text-color: #152837
+    --text-color: #152837;
+}
+
+[data-theme='dark'] {
+    --bg-color: #152837;
+    --text-color: #9bc0dc;
+}
+
+* {
+    transition: all .3s ease-in-out;
 }
 
 .art-main {
@@ -20,10 +29,32 @@
     display: flex;
     flex-direction: column;
     margin-right: 10%;
+    margin-left: 10%;
 }
 
 .nav {
-    margin-right: 10%;
+    margin-top: 13%;
+    margin-bottom: 13%;
+    margin-left: 2%;
+}
+
+.nav, ul, li {
+    box-sizing: border-box;
     max-width: 20%;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    list-style-type: none;
+    
+}
+
+ul {
+    transform: translate(-20%, -30%);
+    background-color: transparent;
+}
+
+li>h1 {
+    text-overflow: ellipsis;
+    width: 10%;
+    font-size: 190%;
 }
 

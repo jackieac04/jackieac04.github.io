@@ -2,7 +2,7 @@
   width: 100%;
   position: absolute;
   top: 4.8%;
-   left: 0;
+  left: 0;
   min-height: 90%;
 }
 
@@ -124,7 +124,7 @@
 
 .welcome, .art, .cs {
   position: absolute;
-  top: -100%;
+  top: -240%;
   font-size: 9vw;
   background: linear-gradient(to top, #6fc4fd 20%, #E9F1F7 100%);
   -webkit-background-clip: text;
@@ -132,10 +132,6 @@
   -webkit-text-fill-color: transparent; /* for Safari */
   color: transparent;
 
-}
-
-.welcome {
-  top: -240%;
 }
 
 .welcome {
