@@ -5,8 +5,6 @@ import Header from '/Header_.png'
 import Footer from '/Footer.png'
 import Art from './Art'
 import CS from './CS'
-import Traditional from './Traditional'
-import Digital from './Digital'
 import Contact from './Contact'
 import DarkMode from './DarkMode'
 
@@ -22,7 +20,7 @@ function App() {
         <Link className="home-link" to='/'>Home</Link>
         {location.pathname !== '/' && <DarkMode />}
         {location.pathname === '/' && <h1 className='welcome'>Welcome</h1>}
-        {location.pathname === '/art' && <h1 className='art'>Art Portfolio</h1>}
+        {location.pathname.startsWith('/art') && <h1 className='art'>Art Portfolio</h1>}
         {location.pathname === '/cs' && <h1 className='cs'>CS Projects</h1>}
   <div className="right-links">
     <Link className="art-link" to='/art'>Art</Link>
@@ -34,12 +32,7 @@ function App() {
 
     <Routes>
       <Route path='/' element={<Home />}/>
-
-      <Route path='/art' element={<Art />}>
-        <Route path='traditional' element={<Traditional />}/>
-        <Route path='digital' element={<Digital />}/>
-      </Route>
-
+      <Route path='/art/*' element={<Art />}/>
       <Route path='/cs' element={ <CS /> } />
       <Route path='*' element={<h1>Not Found</h1>}/>
   </Routes>

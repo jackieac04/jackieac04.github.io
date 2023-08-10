@@ -8,6 +8,7 @@
 
 .header-nav {
   background-color: #124464;
+  z-index: 3.5;
 }
 
 .header-img {

@@ -2,6 +2,10 @@ import React from 'react'
 
 export default function Digital() {
   return (
-    <div>Digital</div>
+    <>
+    <div className='digital'>
+        Digital
+    </div>
+    </>
   )
 }

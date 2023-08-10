@@ -1,39 +1,29 @@
 import React from 'react'
 import './Art.css'
+import ArtNav from './ArtNav'
+import { Outlet, useLocation, Routes, Route } from 'react-router-dom';
+import ArtMainContent from './ArtMainContent';
+import options from './ArtOptions';
+
 export default function Art() {
+    const location = useLocation()
   return (
     <div className='art-main'>
-        <div className='nav'>
-        <nav>
-            <br />
-            <br />
-            <ul>
-                <li> <h1>basic nav bar</h1></li>
-            </ul>
-        </nav>
-        </div>
+      <div className='nav'>
+        <ArtNav />
+        <Outlet />
+      </div>
 
-        <div className='info'>
-        <br />
-        <div className='about'>
-            <h1>About my Work</h1>
-            <p>Text describing my art portfolio</p>
-            <video src="">My most recent sketchbook</video>
-        </div>
-        <div className='awards'>
-            <h2>Awards</h2>
-            <p>awards</p>
-        </div>
-        <div className='pubs'>
-            <h2>Publications and Exhibitions</h2>
-            <p>pubs</p>
-        </div>
-        <div className='features'>
-            <h2>Features</h2>
-            <p>features</p>
-        </div>
+      {location.pathname === '/art' && <ArtMainContent />}
+      <Routes>
+        {options.map(option => (
+          <Route key={option.optElement} path={option.optElement} element={option.component}>
+            {option.subOptions.map(subOption => (
+              <Route key={subOption.to} path={subOption.to} element={subOption.component} />
+            ))}
+          </Route>
+        ))}
+      </Routes>
     </div>
-</div>
-        
-  )
+  );
 }
