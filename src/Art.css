@@ -59,8 +59,13 @@ li>h1 {
 }
 
 
-@media (min-aspect-ratio: 15/9) {
+@media (max-aspect-ratio: 15/9) {
     li>h1 {
-        font-size: 180%;
+        font-size: 160%;
+    }
+
+    ul {
+        transform: translate(-50%, -30%);
+        background-color: transparent;
     }
 }

@@ -71,3 +71,23 @@
     transform: translateY(-10px);
   }
   
+  @media (max-aspect-ratio: 9/15) {
+
+    .gmail-link, .linkedin-link {
+        position: absolute;
+        top: 68%; /* Adjust as needed to position the Gmail icon at the desired spot on the Web image */
+        bottom: 90%;
+        z-index: 5;
+      }
+
+      .ig-link, .discord-link, .github-link {
+        position: absolute;
+        top: 74%;
+        bottom: 88%;
+        z-index: 5;
+        }
+        
+        .gmail, .linkedin, .ig, .discord, .github {
+            width: 95%;
+          }
+  }
