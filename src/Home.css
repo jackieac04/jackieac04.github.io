@@ -90,4 +90,9 @@
         .gmail, .linkedin, .ig, .discord, .github {
             width: 95%;
           }
+
+          .butterflies {
+            display: none;
+            opacity: 0;
+          }
   }
