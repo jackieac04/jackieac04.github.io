@@ -1,40 +1,62 @@
+:root {
+  --bg-color: #9bc0dc;
+  --text-color: #152837;
+}
+
+[data-theme='dark'] {
+  --bg-color: #152837;
+  --text-color: #9bc0dc;
+}
+
+
 .route-content {
   width: 100%;
   position: absolute;
-  top: 4.8%;
+  top: 5%;
   left: 0;
   min-height: 90%;
+  z-index: 3;
+  background-color: var(--bg-color);
 }
 
 .header-nav {
-  z-index: 4;
   max-height: 20%;
+  z-index: 3;
+  position: relative;
+  transform: translateY(-90%);
+  background-color: var(--bg-color);
 }
 
 .header-img {
   width: 100%;
-  z-index: 4;
+  z-index: 0;
   position: relative; /* z index only works on positioned elements*/
 }
 
-.footer-nav {
-  /* position: absolute; */
-  margin-top: -20%;
+.header-img-2 {
+  position: absolute;
   width: 100%;
-  top: .4%;
+  z-index: 4;
+}
+
+.footer-nav {
+  position: absolute;
+  bottom: .3%;
+  width: 100%;
+  z-index: 3;
 }
 
 .footer-img {
   width: 100%;
-  top: -10%;
+  transform: translateY(-15%);
   display: block;
-  position: relative;
+  position: absolute;
 }
 
 .footer-imgs {
-  position: absolute;
-  top: 95%; /* Adjust as needed */
-  bottom: 100%;
+  transform: translateY(-6%);
+  position: relative;
+  top: -100%; /* Adjust as needed */
   left: 0; /* This places it at the left edge of footer-nav */
   z-index: 5; /* Ensure it's above the footer-img */
 }
@@ -42,16 +64,15 @@
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   position: relative;
   width: 100%;
 }
 
 .footer-text {
   position: absolute;
-  top: 97%; /* Center the text vertically */
+  top: 40%; /* Center the text vertically */
   left: 50%; /* Center the text horizontally */
-  transform: translate(20%, -70%); 
+  transform: translate(20%, -50%); 
   z-index: 5; /* Ensure the text appears on top of the image */
   /* Other styles for the text */
   font-family: "sirenia", sans-serif;
@@ -64,6 +85,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent; /* for Safari */
   color: transparent;
+  margin-bottom: 0;
 }
 
 .link-hold {
@@ -154,13 +176,6 @@
     top: 4%;
     left: 0;
     min-height: 90%;
-  }
-
-  .footer-nav {
-    transform: translateY(-.5%);
-  }
-
-  .footer-text {
-    transform: translate(4%, -70%); 
+    flex: 1;
   }
 }

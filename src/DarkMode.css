@@ -54,7 +54,7 @@ img.visible {
     transition: all .3s ease-in-out;
 }
 
-@media (max-aspect-ratio: 9/15) {
+@media (max-aspect-ratio: 14/15) {
     .dark_mode_label>img {
         transform: translateY(-100%);
     }

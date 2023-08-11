@@ -29,14 +29,15 @@
 .info {
     display: flex;
     flex-direction: column;
-    margin-right: 10%;
+    margin-right: 6%;
     margin-left: 6%;
+    text-align: center;
 }
 
 .nav {
     display: flex;
-    margin-top: 13%;
-    margin-bottom: 13%;
+    margin-top: 18%;
+    margin-bottom: 89%;
     margin-left: 2%;
     box-sizing: border-box;
     max-width: 30%;
@@ -44,6 +45,7 @@
     color: var(--bg-color);
     list-style-type: none;
     z-index: 20;
+    padding: 1%;
 }
 
 .nav-inner {
@@ -68,7 +70,8 @@
     text-decoration: none;
     color: var(--bg-color);
     position: relative;
-    align-items: center;
+    text-align: center;
+    font-size: small;
     box-sizing: border-box;
 }
 
@@ -88,12 +91,97 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: center;
 }
 
+.about > h1 {
+    transform: translateX(40%);
+    font-size: 200%;
+}
 .text-video {
-    display: flex;
+    display: block;
 }
 
-.text-video>p {
-   margin-right: 5%;
+.movie {
+    float: right;
+    width: 50%;
+    margin-right: 30%;
+    margin-bottom: 2%;
+    max-height: 50%;
 }
+
+iframe {
+    width: 120%;
+    aspect-ratio: 16/9;
+}
+
+.about-text {
+    font-size: medium;
+    float: left;
+    display: block;
+}
+
+p > a {
+    font-size: medium;
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+div > h2 {
+    font-size: 70%;
+}
+
+div > h5 {
+    font-size: 50%;
+}
+
+h2 > p {
+    font-size: smaller;
+}
+
+
+@media (max-aspect-ratio: 13/15) {
+    .nav-link {
+        font-size: x-small;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin-right: 6%;
+        margin-left: 6%;
+        text-align: center;
+    }
+    .about-text {
+        font-size: xx-small;
+    }
+    p > a {
+        font-size: xx-small;
+    }
+    .movie {
+        width: 30%;
+    }
+  }
+
+
+@media (max-aspect-ratio: 15/15) {
+
+    .nav-link {
+        font-size: x-small;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin-right: 6%;
+        margin-left: 6%;
+        text-align: center;
+    }
+    .about-text {
+        font-size: x-small;
+    }
+    p > a {
+        font-size: x-small;
+    }
+    .movie {
+        width: 40%;
+    }
+  }

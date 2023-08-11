@@ -1,16 +1,15 @@
 import React from 'react'
 import './Art.css'
-import ArtNav from './ArtNav'
+import Nav from './Nav'
 import { Outlet, useLocation, Routes, Route } from 'react-router-dom';
 import ArtMainContent from './ArtMainContent';
-import options from './ArtOptions';
 
-export default function Art() {
+export default function Art({options}) {
     const location = useLocation()
   return (
     <div className='art-main'>
       <div className='nav'>
-        <ArtNav />
+        <Nav options={options}/>
         <Outlet />
       </div>
 

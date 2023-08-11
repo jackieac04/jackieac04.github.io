@@ -1,9 +1,8 @@
 import React from 'react';
 import Option from './Option';
 import './Art.css';
-import options from './ArtOptions';
 
-export default function ArtNav() {
+export default function ArtNav({options}) {
 
  return (
     <>
