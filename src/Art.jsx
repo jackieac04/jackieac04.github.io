@@ -17,11 +17,7 @@ export default function Art() {
       {location.pathname === '/art' && <ArtMainContent />}
       <Routes>
         {options.map(option => (
-          <Route key={option.optElement} path={option.optElement} element={option.component}>
-            {option.subOptions.map(subOption => (
-              <Route key={subOption.to} path={subOption.to} element={subOption.component} />
-            ))}
-          </Route>
+          <Route key={option.name} path={option.to} element={option.component}/>
         ))}
       </Routes>
     </div>

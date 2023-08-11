@@ -1,7 +1,7 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom' 
 import './App.css'
 import Home from './Home'
-import Header from '/Header_.png'
+import Header from '/Header.png'
 import Footer from '/Footer.png'
 import Art from './Art'
 import CS from './CS'

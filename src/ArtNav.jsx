@@ -9,7 +9,7 @@ export default function ArtNav() {
     <>
     <nav className='nav-inner'>
       {options.map(option => (
-        <Option key={option.name} optionName={option.name} optElement={option.optElement} subOptions={option.subOptions.map(sub => sub.name)} />
+        <Option key={option.name} name={option.name} to={option.to} />
       ))}
     </nav>
     </>

@@ -1,36 +1,17 @@
-import { Print, Paint, MixedTrad, Murals, Graphic, Illustration, MixedDig, BPH, Traditional, Digital } from './artSubPages/index.js';
+import ArtSubContent from './ArtSubContent.jsx';
 import React from 'react';
 
 
 const options = [
-    {
-      name: "Traditional",
-      optElement: 'traditional/*',
-      component: <Traditional />,
-      subOptions: [
-        { name: 'Mixed Media', to: 'mixedMedia', component: <MixedTrad /> },
-        { name: 'Murals', to: 'murals', component: <Murals /> },
-        { name: 'Painting', to: 'painting', component: <Paint />},
-        { name: 'Printmaking', to: 'printmaking', component: <Print /> }
-      ]
-    },
-    {
-      name: "Digital",
-      optElement: 'digital/*',
-      component: <Digital />,
-      subOptions: [
-        { name: 'Graphic Design', to: 'graphicDesign', component: <Graphic /> },
-        { name: 'Illustration', to: 'illustration', component: <Illustration /> },
-        { name: 'Mixed Media', to: 'mixedMedia', component: <MixedDig/> }
-      ]
-    },
-    {
-        name: "Puzzle Club",
-        optElement: 'puzz',
-        subOptions: [
-            {name: 'Brown Puzzlehunt 2023', to: 'bph', component: <BPH /> }
-        ]
-    }
+        { name: 'Mixed Media, Traditional', to: 'mixedmediatrad', component: <ArtSubContent name='Mixed Media, Traditional' /> },
+        { name: 'Murals', to: 'murals', component: <ArtSubContent name='Murals'/> },
+        { name: 'Painting', to: 'painting', component: <ArtSubContent name='Painting'/>},
+        { name: 'Printmaking', to: 'printmaking', component: <ArtSubContent name='Printmaking'/> },
+        { name: 'Graphic Design', to: 'graphicDesign', component: <ArtSubContent name='Graphic Design'/> },
+        { name: 'Illustration', to: 'illustration', component: <ArtSubContent name='Illustration'/> },
+        { name: 'Mixed Media, Digital', to: 'mixedmediadigi', component: <ArtSubContent name='digital'/> },
+        { name: "Puzzle Club", to: 'puzz', component: <ArtSubContent name='bph'/>}
+    
   ];
 
   export default options;

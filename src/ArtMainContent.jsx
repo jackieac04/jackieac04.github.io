@@ -5,9 +5,12 @@ export default function ArtMainContent() {
     <div className='info'>
     <br />
     <div className='about'>
-        <h1>About my Work</h1>
-        <p>Text describing my art portfolio</p>
-        <video src="">My most recent sketchbook</video>
+            <h1>About my Work</h1>
+        <div className='text-video'>
+            <p>Text describing my art portfolio</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7HZEJcnwbus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+        </div>
+        
     </div>
     <div className='awards'>
         <h2>Awards</h2>
