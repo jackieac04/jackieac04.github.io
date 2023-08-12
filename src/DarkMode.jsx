@@ -8,7 +8,6 @@ export default function DarkMode() {
 
     useEffect(() => {
         // Set the initial theme based on the data-theme attribute
-       
         // Retrieve the stored theme from localStorage
         const selectedTheme = localStorage.getItem("selectedTheme");
 

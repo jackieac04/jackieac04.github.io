@@ -4,10 +4,11 @@ import Home from './Home'
 import Header from '/Header_.png'
 import Header2 from '/Header.png'
 import Footer from '/Footer.png'
-import Main from './ArtCSMain'
+import ArtMain from './ArtMainContent'
+import CSMain from './CSMainContent'
 import Contact from './Contact'
 import DarkMode from './DarkMode'
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import artOptions from './ArtOptions';
 import csOptions from './CSOptions';
 import Nav from './Nav.jsx';
@@ -16,29 +17,6 @@ function App() {
   const [showArtSubRoutes, setShowArtSubRoutes] = useState(false);
   const [showCSSubRoutes, setShowCSSubRoutes] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    // Get the height of .route-content
-    const routeContentHeight = document.querySelector('.route-content').offsetHeight;
-    const headerContentHeight = document.querySelector('.header-nav').offsetHeight;
-    // Set the height as a CSS variable on the body
-    document.body.style.setProperty('--route-content-height', `${routeContentHeight}px`);
-    document.body.style.setProperty('--header-content-height', `${headerContentHeight}px`);
-    // Optional: Update the height on window resize
-    const handleResize = () => {
-      const updatedHeight = document.querySelector('.route-content').offsetHeight;
-      document.body.style.setProperty('--route-content-height', `${updatedHeight}px`);
-      const headerContentHeight = document.querySelector('.header-nav').offsetHeight;
-      document.body.style.setProperty('--header-content-height', `${headerContentHeight}px`);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    // Cleanup: Remove the event listener when the component is unmounted
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []); 
 
   return (
     <>
@@ -93,14 +71,14 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />}/>
 
-      <Route path='/art' element={<Main options={artOptions}/>}/>
+      <Route path='/art' element={<ArtMain options={artOptions}/>}/>
       <Route>
         {artOptions.map(option => (
             <Route key={option.name} path={option.to} element={option.component}/>
           ))}
       </Route>
 
-      <Route path='/cs' element={ <Main options={csOptions}/> } />
+      <Route path='/cs' element={ <CSMain options={csOptions}/> } />
       <Route>
         {csOptions.map(option => (
             <Route key={option.name} path={option.to} element={option.component}/>

@@ -12,7 +12,7 @@
 .route-content {
   width: 100%;
   position: absolute;
-  top: 5%;
+  top: 4.81%;
   left: 0;
   min-height: 90%;
   z-index: 3;
@@ -41,7 +41,7 @@
 
 .footer-nav {
   position: absolute;
-  bottom: .3%;
+  bottom: .5%;
   width: 100%;
   z-index: 3;
 }
@@ -196,7 +196,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 30%;
   top: 100%; /* This positions the dropdown right below the main link */
-  left: -100%;
+  left: -50%;
   z-index: 15;
   transition: opacity 0.2s, visibility 0.2s;
   opacity: 1;

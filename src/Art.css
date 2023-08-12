@@ -1,32 +1,39 @@
 :root {
     --bg-color: #9bc0dc;
+    --bg-color-lowo: rgb(155, 192, 220, .5);
     --text-color: #152837;
     --award-color: #60a6dc;
     --about-color: #bfddf4;
+    --bg-img: url('/Art_Page_Light.png');
+    --bg-img-p: url('/Art_Page_Light_Purple.png');
 }
 
 [data-theme='dark'] {
     --bg-color: #152837;
+    --bg-color-lowo: rgb(21, 40, 55, .5);
     --text-color: #9bc0dc;
     --award-color: #0c4977;
+    --bg-img: url('/Art_Page_Dark.png');
+    --bg-img-p: url('/Art_Page_Dark_Purple.png');
 }
 
 * {
     transition: all .3s ease-in-out;
 }
 
-.art-main {
+.main, .cs-main {
     display: flex;
-    position: relative;
-    background-color: var(--bg-color);
+    position: absolute;
     z-index: 3;
-    height: 100%;
+    height: 100.4%;
     color: var(--text-color);
     font-family: "sirenia", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 3vw;
     z-index: 3;
+    background-image: var(--bg-img);
+    background-size: 100% auto;
 }
 
 .info {
@@ -35,8 +42,85 @@
     margin-right: 6%;
     margin-left: 6%;
     text-align: center;
+    background-color: var(--bg-color-lowo);
+    background: op;
+}
+.awards ul li {
+    color: var(--text-color);
+    font-size: 70%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2%;
+    text-align: left; 
+    position: relative;
+    padding-bottom: 1%; 
+    margin-bottom: 1%; 
 }
 
+
+.awards ul li::after {
+    content: "";
+    display: block;
+    height: 5%; /* This will be the "thickness" of your border */
+    background-color: var(--text-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.awards > ul > li >span {
+    text-align: right;
+    margin-left: 2%;
+}
+
+.center {
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 2%;
+}
+
+.awards > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.awards, .pubs {
+    position: absolute;
+    display: flex;
+}
+
+.awards {
+    top: 40%;
+    left: 10%;
+    width: 100%;
+}
+
+.pubs {
+    top: 70%;
+    left: 20%;
+}
+
+.awards > h2, .pubs > h2 {
+    width: .1rem;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 130%;
+}
+
+.pubs > h2 {
+    width: 4rem;
+    writing-mode: vertical-rl;
+    transform: translateY(-20%);
+    padding-left: 15%;
+}
+
+.pubs > p {
+    left: 20%;
+}
 .nav-inner {
     position: relative;
 } 
@@ -75,6 +159,10 @@
     transform: translateX(70%);
     font-size: 184%;
 }
+
+.about > p {
+    font-size: 100%;
+}
 .text-video {
     display: block;
 }
@@ -87,39 +175,29 @@
     max-height: 50%;
 }
 
-iframe {
-    width: 120%;
-    aspect-ratio: 16/9;
-}
-
 .about-text {
-    font-size: medium;
+    font-size: 60%;
     float: left;
     display: block;
 }
 
 p > a {
-    font-size: medium;
+    font-size: 100%;
     color: var(--text-color);
     text-decoration: underline;
 }
 
-div > h2 {
-    font-size: 70%;
-}
-
-div > h5 {
-    font-size: 50%;
-}
-
 h2 > p {
-    font-size: smaller;
+    font-size: smal;
 }
 
+.pubs > a {
+    font-size: 60%;
+}
 
 @media (max-aspect-ratio: 13/15) {
 
-    .art-main {
+    .main {
         height: 80%;
     }
     .nav-link {
@@ -133,19 +211,28 @@ h2 > p {
         text-align: center;
         justify-content: space-around;
     }
-    .about-text {
-        font-size: xx-small;
-    }
-    p > a {
-        font-size: xx-small;
-    }
-    .movie {
-        width: 30%;
+   
+    .pubs {
+        top: 50%;
     }
   }
 
 
-@media (max-aspect-ratio: 15/15) {
+@media (max-aspect-ratio: 17/15) {
+
+    .main {
+        height: 100%;
+    }
+
+    .about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 2%;
+    transform: translateY(-140%);
+    }
 
     .info {
         display: flex;
@@ -154,13 +241,20 @@ h2 > p {
         margin-left: 6%;
         text-align: center;
     }
-    .about-text {
-        font-size: x-small;
-    }
-    p > a {
-        font-size: x-small;
-    }
-    .movie {
-        width: 40%;
-    }
+    
+   .pubs {
+    top: 70%;
+   }
+
+   .pubs > h2 {
+    font-size: 110%;
+   }
+
   }
+
+
+  .cs-main {
+    background-image: var(--bg-img-p);
+    flex-direction: column;
+  }
+

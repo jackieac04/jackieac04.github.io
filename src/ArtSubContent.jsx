@@ -5,6 +5,7 @@ export default function ArtSubContent({name}) {
     <>
     <br />
     <br />
+    <br />
     <div>{name}</div>
     </>
   )
