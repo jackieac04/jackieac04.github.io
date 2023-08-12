@@ -215,6 +215,10 @@ h2 > p {
     .pubs {
         top: 50%;
     }
+
+    .pubs h2 {
+        padding-left: 10%;
+    }
   }
 
 
@@ -258,3 +262,6 @@ h2 > p {
     flex-direction: column;
   }
 
+  .cs-text {
+    font-size: 80%;
+  }
