@@ -210,18 +210,18 @@
   text-align: center;
 }
 
- .art-link:hover + .sub-routes {
+ .art-link:hover + .sub-routes, .cs-link:hover + .sub-routes {
   display: block;
   opacity: 1;
   visibility: visible;
 }
 
-.art-menu-container:hover + .sub-routes {
+.art-menu-container:hover + .sub-routes, .cs-menu-container:hover + .sub-routes {
   display: block;
   opacity: 1;
   visibility: visible;
 }
 
-.art-menu-container {
+.art-menu-container, .cs-menu-container {
   position: relative;
 }

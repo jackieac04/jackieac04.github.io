@@ -13,7 +13,8 @@ import csOptions from './CSOptions';
 import Nav from './Nav.jsx';
 
 function App() {
-  const [showSubRoutes, setShowSubRoutes] = useState(false);
+  const [showArtSubRoutes, setShowArtSubRoutes] = useState(false);
+  const [showCSSubRoutes, setShowCSSubRoutes] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -56,21 +57,35 @@ function App() {
 
 <div 
   className="art-menu-container"
-  onMouseEnter={() => setShowSubRoutes(true)}
-  onMouseLeave={() => setShowSubRoutes(false)}
+  onMouseEnter={() => setShowArtSubRoutes(true)}
+  onMouseLeave={() => setShowArtSubRoutes(false)}
 >
   <Link className="art-link" to='/art'>
     Art
   </Link>
 
-  {showSubRoutes && (
+  {showArtSubRoutes && (
     <div className="sub-routes">
       <Nav options={artOptions}/>
     </div>
   )}
 </div>
 
-    <Link className="cs-link" to='/cs'>CS</Link>
+<div 
+  className="cs-menu-container"
+  onMouseEnter={() => setShowCSSubRoutes(true)}
+  onMouseLeave={() => setShowCSSubRoutes(false)}
+>
+  <Link className="cs-link" to='/cs'>
+    CS
+  </Link>
+
+  {showCSSubRoutes && (
+    <div className="sub-routes">
+      <Nav options={csOptions}/>
+    </div>
+  )}
+</div>
   </div>
 </div>
     <div className='route-content'>
@@ -84,8 +99,13 @@ function App() {
             <Route key={option.name} path={option.to} element={option.component}/>
           ))}
       </Route>
-      
-      <Route path='/cs/*' element={ <Main options={csOptions}/> } />
+
+      <Route path='/cs' element={ <Main options={csOptions}/> } />
+      <Route>
+        {csOptions.map(option => (
+            <Route key={option.name} path={option.to} element={option.component}/>
+          ))}
+      </Route>
       <Route path='*' element={<h1>Not Found</h1>}/>
   </Routes>
     </div>
