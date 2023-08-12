@@ -1,11 +1,14 @@
 :root {
     --bg-color: #9bc0dc;
     --text-color: #152837;
+    --award-color: #60a6dc;
+    --about-color: #bfddf4;
 }
 
 [data-theme='dark'] {
     --bg-color: #152837;
     --text-color: #9bc0dc;
+    --award-color: #0c4977;
 }
 
 * {
@@ -34,45 +37,17 @@
     text-align: center;
 }
 
-.nav {
-    display: flex;
-    margin-top: 18%;
-    margin-bottom: 89%;
-    margin-left: 2%;
-    box-sizing: border-box;
-    max-width: 30%;
-    background-color: var(--text-color);
-    color: var(--bg-color);
-    list-style-type: none;
-    z-index: 20;
-    padding: 1%;
-}
-
 .nav-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     position: relative;
-    height: 100%;
-    z-index: 20;
-}
+} 
 
 .inner-div {   
-    position: relative;
    justify-content: space-around;
    display: flex;
-   box-sizing: border-box;
-   align-items: center;
 }
 
 .nav-link {
-    width: 100%;
-    text-decoration: none;
-    color: var(--bg-color);
-    position: relative;
-    text-align: center;
     font-size: small;
-    box-sizing: border-box;
 }
 
 .nav-link:hover {
@@ -85,18 +60,20 @@
     color: transparent;
     filter: brightness(1.5);
     box-shadow: 10cap;
-}
+ } 
 
 .about {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: center;
+    padding: 2%;
+    margin-bottom: 2%;
 }
 
 .about > h1 {
-    transform: translateX(40%);
-    font-size: 200%;
+    transform: translateX(70%);
+    font-size: 184%;
 }
 .text-video {
     display: block;
@@ -141,6 +118,10 @@ h2 > p {
 
 
 @media (max-aspect-ratio: 13/15) {
+
+    .art-main {
+        height: 80%;
+    }
     .nav-link {
         font-size: x-small;
     }
@@ -150,6 +131,7 @@ h2 > p {
         margin-right: 6%;
         margin-left: 6%;
         text-align: center;
+        justify-content: space-around;
     }
     .about-text {
         font-size: xx-small;
@@ -165,9 +147,6 @@ h2 > p {
 
 @media (max-aspect-ratio: 15/15) {
 
-    .nav-link {
-        font-size: x-small;
-    }
     .info {
         display: flex;
         flex-direction: column;

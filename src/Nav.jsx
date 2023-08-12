@@ -2,7 +2,7 @@ import React from 'react';
 import Option from './Option';
 import './Art.css';
 
-export default function ArtNav({options}) {
+export default function Nav({options}) {
 
  return (
     <>

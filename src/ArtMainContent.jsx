@@ -27,12 +27,12 @@ export default function ArtMainContent() {
     </div>
     <div className='awards'>
         <h2>Awards</h2>
-        <p>
+        <ul>
         <a href='https://billofrightsinstitute.org/people/jaclyn-cohen'>The Bill Of Rights Institute My Impact Challenge- Honorable Mention Scholarship, 2022</a> <br />
         <a href="https://armoryart.org/art-center-programs/scholastic/"> Scholastic Gold Key - 7 awards from 2020 to 2022</a> <br />
         <a href='https://armoryart.org/art-center-programs/scholastic/'>Scholastic American Visions Nominee - 1 of 5 nominnes from over 1000 submissions</a> <br />
         <a href='https://witva.org/scholarships'>Women In the Visual Arts Honorable Mention - 2022</a>
-        </p>
+        </ul>
     </div>
     <div className='pubs'>
         <h2>Publications and Exhibitions</h2>

@@ -3,14 +3,14 @@ import React from 'react';
 
 
 const options = [
-        { name: 'Mixed Media, Traditional', to: 'mixedmediatrad', component: <ArtSubContent name='Mixed Media, Traditional' /> },
-        { name: 'Murals', to: 'murals', component: <ArtSubContent name='Murals'/> },
-        { name: 'Painting', to: 'painting', component: <ArtSubContent name='Painting'/>},
-        { name: 'Printmaking', to: 'printmaking', component: <ArtSubContent name='Printmaking'/> },
-        { name: 'Graphic Design', to: 'graphicDesign', component: <ArtSubContent name='Graphic Design'/> },
-        { name: 'Illustration', to: 'illustration', component: <ArtSubContent name='Illustration'/> },
-        { name: 'Mixed Media, Digital', to: 'mixedmediadigi', component: <ArtSubContent name='digital'/> },
-        { name: "Puzzle Club", to: 'puzz', component: <ArtSubContent name='bph'/>}
+        { name: 'Mixed Media, Traditional', to: 'art/mixedmediatrad', component: <ArtSubContent name='Mixed Media, Traditional' /> },
+        { name: 'Murals', to: 'art/murals', component: <ArtSubContent name='Murals'/> },
+        { name: 'Painting', to: 'art/painting', component: <ArtSubContent name='Painting'/>},
+        { name: 'Printmaking', to: 'art/printmaking', component: <ArtSubContent name='Printmaking'/> },
+        { name: 'Graphic Design', to: 'art/graphicDesign', component: <ArtSubContent name='Graphic Design'/> },
+        { name: 'Illustration', to: 'art/illustration', component: <ArtSubContent name='Illustration'/> },
+        { name: 'Mixed Media, Digital', to: 'art/mixedmediadigi', component: <ArtSubContent name='digital'/> },
+        { name: "Puzzle Club", to: 'art/puzz', component: <ArtSubContent name='bph'/>}
     
   ];
 

@@ -7,12 +7,15 @@ import Footer from '/Footer.png'
 import Main from './ArtCSMain'
 import Contact from './Contact'
 import DarkMode from './DarkMode'
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import artOptions from './ArtOptions';
 import csOptions from './CSOptions';
+import Nav from './Nav.jsx';
 
 function App() {
+  const [showSubRoutes, setShowSubRoutes] = useState(false);
   const location = useLocation();
+
   useEffect(() => {
     // Get the height of .route-content
     const routeContentHeight = document.querySelector('.route-content').offsetHeight;
@@ -50,7 +53,23 @@ function App() {
         {location.pathname.startsWith('/art') && <h1 className='art'>Art Portfolio</h1>}
         {location.pathname === '/cs' && <h1 className='cs'>CS Projects</h1>}
   <div className="right-links">
-    <Link className="art-link" to='/art'>Art</Link>
+
+<div 
+  className="art-menu-container"
+  onMouseEnter={() => setShowSubRoutes(true)}
+  onMouseLeave={() => setShowSubRoutes(false)}
+>
+  <Link className="art-link" to='/art'>
+    Art
+  </Link>
+
+  {showSubRoutes && (
+    <div className="sub-routes">
+      <Nav options={artOptions}/>
+    </div>
+  )}
+</div>
+
     <Link className="cs-link" to='/cs'>CS</Link>
   </div>
 </div>
@@ -58,7 +77,14 @@ function App() {
 
     <Routes>
       <Route path='/' element={<Home />}/>
-      <Route path='/art/*' element={<Main options={artOptions}/>}/>
+
+      <Route path='/art' element={<Main options={artOptions}/>}/>
+      <Route>
+        {artOptions.map(option => (
+            <Route key={option.name} path={option.to} element={option.component}/>
+          ))}
+      </Route>
+      
       <Route path='/cs/*' element={ <Main options={csOptions}/> } />
       <Route path='*' element={<h1>Not Found</h1>}/>
   </Routes>

@@ -113,8 +113,8 @@
   position: absolute;
   top: 2%;  /* Adjust as needed */
   left: 2%;
-  right: 2%;
-  z-index: 15; /* Ensure the links appear on top of the image */
+  right: 5%;
+  z-index: 5; /* Ensure the links appear on top of the image */
   font-family: "sirenia", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -133,6 +133,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent; /* for Safari */
   color: transparent;
+  padding-bottom: 1%;
 }
 
 .art-link:hover, .cs-link:hover, .home-link:hover {
@@ -147,7 +148,7 @@
 
 .welcome, .art, .cs {
   position: absolute;
-  top: -240%;
+  top: -180%;
   font-size: 9vw;
   background: linear-gradient(to top, #6fc4fd 20%, #E9F1F7 100%);
   -webkit-background-clip: text;
@@ -169,7 +170,7 @@
   left: 28%;
 }
 
-@media (max-aspect-ratio: 9/15) {
+@media (max-aspect-ratio: 15/15) {
   .route-content {
     width: 100%;
     position: absolute;
@@ -178,4 +179,49 @@
     min-height: 90%;
     flex: 1;
   }
+  .footer-nav {
+    transform: translateY(-16%);
+  }
+
+  .app-container {
+    background-color: #154665;
+  }
+}
+
+.sub-routes {
+  border-radius: 5% 5%;
+  position: absolute;
+  background-color: var(--text-color);
+  min-width: 10%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 30%;
+  top: 100%; /* This positions the dropdown right below the main link */
+  left: -100%;
+  z-index: 15;
+  transition: opacity 0.2s, visibility 0.2s;
+  opacity: 1;
+}
+
+.sub-routes a {
+  color: var(--bg-color);
+  padding: 10% 14%;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+ .art-link:hover + .sub-routes {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.art-menu-container:hover + .sub-routes {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.art-menu-container {
+  position: relative;
 }

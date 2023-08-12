@@ -1,24 +1,18 @@
 import React from 'react'
 import './Art.css'
-import Nav from './Nav'
-import { Outlet, useLocation, Routes, Route } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import ArtMainContent from './ArtMainContent';
+import CSMainContent from './CSMainContent';
 
-export default function Art({options}) {
+export default function Art() {
     const location = useLocation()
   return (
+    <>
     <div className='art-main'>
-      <div className='nav'>
-        <Nav options={options}/>
-        <Outlet />
-      </div>
-
+      {location.pathname === '/cs' && <CSMainContent />}
       {location.pathname === '/art' && <ArtMainContent />}
-      <Routes>
-        {options.map(option => (
-          <Route key={option.name} path={option.to} element={option.component}/>
-        ))}
-      </Routes>
     </div>
+    <Outlet />
+    </>
   );
 }
