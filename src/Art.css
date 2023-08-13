@@ -43,6 +43,7 @@
     margin-left: 6%;
     text-align: center;
     background-color: var(--bg-color-lowo);
+    padding: 1%;
     background: op;
 }
 .awards ul li {
@@ -56,19 +57,11 @@
     position: relative;
     padding-bottom: 1%; 
     margin-bottom: 1%; 
+    border-bottom: 2px solid var(--text-color);
 }
 
 
-.awards ul li::after {
-    content: "";
-    display: block;
-    height: 5%; /* This will be the "thickness" of your border */
-    background-color: var(--text-color);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
+
 
 .awards > ul > li >span {
     text-align: right;
@@ -108,7 +101,7 @@
     width: .1rem;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    font-size: 130%;
+    font-size: 110%;
 }
 
 .pubs > h2 {
@@ -260,8 +253,72 @@ h2 > p {
   .cs-main {
     background-image: var(--bg-img-p);
     flex-direction: column;
+    position: absolute;
   }
 
   .cs-text {
     font-size: 80%;
   }
+
+  .sub-links {
+    display: block;
+    height: 10%;
+    background-color: var(--bg-color-lowo);
+    left: 10%;
+    margin-top: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-bottom: 50%;
+    padding-top: 2%;
+
+  }
+
+  .link {
+    transform: translateX(10%);
+    z-index: 15;
+  }
+  .gif {
+    height: 150%;
+    margin-left: 5%;
+    transform: translateX(10%);
+  }
+
+  .gif:hover {
+    filter: brightness(1.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: 160%;
+  }
+
+  .one {
+    transform: translateX(40%);
+    margin-bottom: 2%;
+  }
+
+  .MP7 {
+    height: 100%;
+    transform: translateX(20%);
+    margin-bottom: 2%;
+  }
+
+  .MP7:hover {
+    height: 110%;
+  }
+
+  .dt {
+    width: 60%;
+    height: auto;
+  }
+
+  .dt:hover {
+    width: 70%;
+    height: auto;
+  }
+  
+  .tp {
+    height: 80%;
+  }
+
+  .tp:hover {
+    height: 90%;
+  }
+
