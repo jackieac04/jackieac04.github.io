@@ -30,7 +30,7 @@ function App() {
         {location.pathname !== '/' && <DarkMode />}
         {location.pathname === '/' && <h1 className='welcome'>Welcome</h1>}
         {location.pathname.startsWith('/art') && <h1 className='art'>Art Portfolio</h1>}
-        {location.pathname === '/cs' && <h1 className='cs'>CS Projects</h1>}
+        {location.pathname.startsWith('/cs') && <h1 className='cs'>CS Projects</h1>}
   <div className="right-links">
 
 <div 

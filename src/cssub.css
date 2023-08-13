@@ -1,0 +1,67 @@
+:root {
+    --bg-color-lowo: rgb(155, 192, 220, .85);
+}
+
+[data-theme='dark'] {
+    --bg-color: #152837;
+    --bg-color-lowo: rgb(21, 40, 55, .85);
+    --text-color: #9bc0dc;
+}
+
+
+.sub-main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-between;
+    z-index: 3;
+    width: 100%;
+    top: .4%;
+    color: var(--text-color);
+    font-family: "sirenia", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    z-index: 3;
+    background-image: url('/CS_Bubbles.png');
+    background-size: 100% auto;
+}
+
+.sub-main div {
+    margin: 0% 2%;
+}
+
+.buttons {
+    position: absolute;
+    top: 110%;
+}
+
+.btn {
+    background-color: var(--text-color);
+}
+
+.btn > a {
+    color: var(--bg-color);
+}
+
+.a {
+    transform: translateX(490%);
+}
+
+.img {
+    width: 30%;
+    padding: 3%;
+}
+
+.imgs, .title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.desc {
+    background-color: var(--bg-color-lowo);
+    color: var(--text-color);
+    padding: 1%;
+    margin-bottom: 2%;
+    border-radius: 2%;
+}
