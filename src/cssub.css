@@ -21,10 +21,14 @@
     font-family: "sirenia", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3vw;
+    font-size: 2vw;
     z-index: 3;
     background-image: url('/CS_Bubbles.png');
     background-size: 100% auto;
+}
+
+.sub-main h1 {
+    font-size: 3em;
 }
 
 .sub-main div {
@@ -33,11 +37,17 @@
 
 .buttons {
     position: absolute;
-    top: 110%;
+    top: 95%;
+    font-family: "sirenia", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.3vw;
+    z-index: 3;
 }
 
 .btn {
     background-color: var(--text-color);
+    transform: translateX(20%);
 }
 
 .btn > a {
@@ -45,17 +55,21 @@
 }
 
 .a {
-    transform: translateX(490%);
+    transform: translateX(720%);
 }
 
 .img {
-    width: 30%;
+    max-width: 22%; /* Adjust this value based on your preference */
+    width: auto;
+    height: auto; /* This maintains the image's aspect ratio */
     padding: 3%;
 }
 
 .imgs, .title {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .desc {
@@ -64,4 +78,79 @@
     padding: 1%;
     margin-bottom: 2%;
     border-radius: 2%;
+}
+.tech {
+    box-sizing: border-box;
+    background-color: var(--bg-color-lowo);
+    border-radius: 2%;
+}
+
+.tech span {
+    font-weight: 600;
+    margin-right: 2%;
+    margin-left: 5%;
+    font-size: 130%;
+}
+
+.tech p {
+    margin-top: 5%;
+    font-size: 100%;
+}
+
+.poster .img0 {
+    width: 26%;
+}
+
+#posterdesc {
+    font-size: 3vw;
+}
+
+.mp > img {
+    max-width: 45%;
+    margin-bottom: 2%;
+}
+
+#mpdesc {
+    font-size: 2.4vw;
+}
+
+.tetris .img1 {
+    max-width: 50%;
+}
+
+.tetris .img0 {
+    max-width: 28%;
+}
+
+#tetdesc {
+    font-size: 2.8vw;
+}
+
+.dttp .img0 {
+    max-width: 100%;
+    margin-bottom: 3%;
+}
+
+.dttp .img1 {
+    max-width: 50%;
+}
+
+#dttpdesc {
+    font-size: 3.5vw;
+}
+
+.this {
+    max-height: 50%;
+}
+
+.this .img0, .this .img1, .this .img2 {
+    max-width: 27%;
+
+    margin-bottom: 2%;
+}
+
+.this .img3, .this .img4 {
+    max-width: 20%;
+
+    margin-bottom: 2%;
 }
