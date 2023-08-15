@@ -4,8 +4,8 @@
     --text-color: #152837;
     --award-color: #60a6dc;
     --about-color: #bfddf4;
-    --bg-img: url('/Art_Page_Light.png');
-    --bg-img-p: url('/Art_Page_Light_Purple.png');
+    --bg-img: url('/bgPages/Art_Page_Light.png');
+    --bg-img-p: url('/bgPages/Art_Page_Light_Purple.png');
 }
 
 [data-theme='dark'] {
@@ -13,8 +13,8 @@
     --bg-color-lowo: rgb(21, 40, 55, .5);
     --text-color: #9bc0dc;
     --award-color: #0c4977;
-    --bg-img: url('/Art_Page_Dark.png');
-    --bg-img-p: url('/Art_Page_Dark_Purple.png');
+    --bg-img: url('/bgPages/Art_Page_Dark.png');
+    --bg-img-p: url('/bgPages/Art_Page_Dark_Purple.png');
 }
 
 * {

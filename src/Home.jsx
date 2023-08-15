@@ -1,6 +1,6 @@
 import React from 'react'
-import Web from '/Web.png'
-import Butterflies from '/ButterfliesE.gif'
+import Web from '/main/Web.png'
+import Butterflies from '/main/ButterfliesE.gif'
 import Contact from './Contact'
 import './Home.css'
 

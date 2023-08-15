@@ -1,10 +1,10 @@
 import React from 'react'
 import './Art.css'
-import tetris from '/tetris.gif'
-import susman from '/susman.gif'
-import MP7 from '/MP7.gif'
-import MP9 from '/MP9.gif'
-import Web from '/Web.png'
+import tetris from '/cssub/tetris.gif'
+import susman from '/cssub/susman.gif'
+import MP7 from '/cssub/MP7.gif'
+import MP9 from '/cssub/MP9.gif'
+import Web from '/main/Web.png'
 
 export default function CSMainContent() {
   return (
@@ -44,8 +44,8 @@ export default function CSMainContent() {
             <img className='gif MP7' src={MP9} />
         </a>
         <a className='link' href="/cs/dttp">
-            <img className='gif dt' src="/dt.gif" />
-            <img className='gif tp' src="/tp.png" />
+            <img className='gif dt' src="/cssub/dt.gif" />
+            <img className='gif tp' src="/cssub/tp.png" />
         </a>
          </div>
       </div>

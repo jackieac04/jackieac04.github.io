@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Sun from "/Sun.png";
-import Moon from "/Moon.png";
+import Sun from "/icons/Sun.png";
+import Moon from "/icons/Moon.png";
 import "./DarkMode.css";
 
 export default function DarkMode() {

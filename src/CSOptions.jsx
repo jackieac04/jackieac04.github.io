@@ -13,11 +13,11 @@ const dttpdesc = "February - March 2023: Decision Tree and Travel Planner are im
 
 const pages = [
 
-        { name: 'Poster Archive - Coming soon', to: '/cs/poster', tech: null, imgs: ['/posterdesign.png'], imgsid: 'poster', description: posterdesc, descid: 'posterdesc', next: '/cs/this', prev: '/cs/dttp'},
-        { name: 'This site!', to:'/cs/this', tech: 'JavaScript (React + SWC), HTML, CSS, VSCode, Procreate', imgs: ['/Web.png', '/timelapse.gif', '/ButterfliesE.gif', '/homesketch.png', '/artsketch.png'], imgsid: 'this', description: thisdesc, descid: 'thisdesc', next: '/cs/mp', prev: '/cs/poster' },
-        { name: 'Modal Perception', to:'/cs/mp', tech: 'JavaScript (jQuery), HTML, CSS, PHP, VSCode', imgs: ['/MP7.gif', '/MP8.gif', '/MP9.gif'], imgsid: 'mp', description: mpdesc, descid: 'mpdesc', next: '/cs/tetrissus', prev: '/cs/this' },
-        { name: 'Tetris and PacMan', to: '/cs/tetrissus', tech: 'Java (JavaFX), IntelliJ', imgs: ['/tetris.gif', '/susman.gif'], imgsid: 'tetris', description: tetdesc, descid: 'tetdesc', next: '/cs/dttp', prev: '/cs/mp'},
-        { name: 'Decision Tree, Travel Planner', to:'/cs/dttp', tech: 'Java, IntelliJ', imgs: ['/dt.gif', '/tp.png'], imgsid: 'dttp', description: dttpdesc, descid: 'dttpdesc', next: '/cs/poster', prev: '/cs/tetrissus' }
+        { name: 'Poster Archive - Coming soon', to: '/cs/poster', tech: null, imgs: ['/cssub/posterdesign.png'], imgsid: 'poster', description: posterdesc, descid: 'posterdesc', next: '/cs/this', prev: '/cs/dttp'},
+        { name: 'This site!', to:'/cs/this', tech: 'JavaScript (React + SWC), HTML, CSS, VSCode, Procreate', imgs: ['/main/Web.png', '/main/timelapse.gif', '/main/ButterfliesE.gif', '/main/homesketch.png', '/main/artsketch.png'], imgsid: 'this', description: thisdesc, descid: 'thisdesc', next: '/cs/mp', prev: '/cs/poster' },
+        { name: 'Modal Perception', to:'/cs/mp', tech: 'JavaScript (jQuery), HTML, CSS, PHP, VSCode', imgs: ['/cssub/MP7.gif', '/cssub/MP8.gif', '/cssub/MP9.gif'], imgsid: 'mp', description: mpdesc, descid: 'mpdesc', next: '/cs/tetrissus', prev: '/cs/this' },
+        { name: 'Tetris and PacMan', to: '/cs/tetrissus', tech: 'Java (JavaFX), IntelliJ', imgs: ['/cssub/tetris.gif', '/cssub/susman.gif'], imgsid: 'tetris', description: tetdesc, descid: 'tetdesc', next: '/cs/dttp', prev: '/cs/mp'},
+        { name: 'Decision Tree, Travel Planner', to:'/cs/dttp', tech: 'Java, IntelliJ', imgs: ['/cssub/dt.gif', '/cssub/tp.png'], imgsid: 'dttp', description: dttpdesc, descid: 'dttpdesc', next: '/cs/poster', prev: '/cs/tetrissus' }
   ];
 
 const options = pages.map(page => ({
