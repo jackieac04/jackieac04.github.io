@@ -92,7 +92,8 @@ function App() {
         <img className='footer-img' src={ Footer } alt="the footer: blue waves">
            </img>
         <div className='footer-imgs'>
-          <Contact link={'link-hold'} gmailIcon={'f-img-gmail'} icon={'f-img'}/>
+          <Contact gmailLink={'link-hold'} linkedinLink={'link-hold'} igLink={'link-hold'} discordLink={'link-hold'} githubLink={'link-hold'}
+          gmailIcon={'f-img-gmail'} linkedinIcon={'f-img'} igIcon={'f-img'} discordIcon={'f-img'} githubIcon={'f-img'}/>
         </div>
         <p className='footer-text'>Made with leafy sheep • Jaclyn Cohen</p>
       </nav>
