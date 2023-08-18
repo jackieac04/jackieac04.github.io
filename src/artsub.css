@@ -4,6 +4,12 @@
     font-style: normal;
 }
 
+.modal-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center; /* This will center the content and buttons horizontally */
+}
 
 .artwork {
     width: 26%;
@@ -47,12 +53,10 @@
 }
 
 .modal-content {
-    position: absolute;
     display: flex;
     z-index: 10;
     width: 95%;
     margin: 2%;
-    top: 20%;
     background-color: var(--text-color);
 }
 
@@ -62,13 +66,17 @@
     padding: 2%;
 }
 
+.close-button {
+height: 10%; 
+}
+
 .modal-content button {
-    position: absolute;
-    top: 0%;
-    z-index: 10;
-    margin: 1%;
     background-color: var(--bg-color);
     color: var(--text-color);
+    z-index: 10;
+    margin: 1%;
+    height: 6%;
+
 }
 
 .content {
@@ -84,11 +92,25 @@
     height: 100%;
     position: absolute;
     top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+
 }
 
+.buttons-art {
+    display: flex;
+    justify-content: space-between;
+    width: 95%; /* Match the width of modal-content for alignment */
+    margin: 2% 0; 
+}
 
+.modal-content, .buttons {
+    margin-bottom: 0;
+    padding: 0;
+}
 @media (max-aspect-ratio: 17/15) {
-
     .artwork {
         width: 22%;
         padding: 2%;

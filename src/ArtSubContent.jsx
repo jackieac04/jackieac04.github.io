@@ -12,15 +12,25 @@ export default function ArtSubContent({genre}) {
     const masonryRef = useRef(null);
     const filteredArtworks = pieces.filter(art => art.genre === genre);
 
-    const handleNext = () => {
+    const handleNext = (e) => {
+        e.stopPropagation();
         if (currentArtIndex < filteredArtworks.length - 1) {
           setCurrentArtIndex(currentArtIndex + 1);
+          setSelectedArt(filteredArtworks[currentArtIndex + 1]);
+        } else {
+            setCurrentArtIndex(0)
+            setSelectedArt(filteredArtworks[0]);
         }
       };
     
-      const handlePrevious = () => {
+      const handlePrevious = (e) => {
+        e.stopPropagation();
         if (currentArtIndex > 0) {
           setCurrentArtIndex(currentArtIndex - 1);
+          setSelectedArt(filteredArtworks[currentArtIndex - 1]);
+        } else {
+            setCurrentArtIndex(filteredArtworks.length - 1)
+            setSelectedArt(filteredArtworks[filteredArtworks.length - 1]);
         }
       };
 
@@ -38,15 +48,17 @@ export default function ArtSubContent({genre}) {
     }, [filteredArtworks]);
 
 
-
   return (
     <>
      <div className="masonry-layout" ref={masonryRef}>
-        {filteredArtworks.map(art => (
+        {filteredArtworks.map((art, index) => (
           <div 
             key={art.title} 
             className="artwork" 
-            onClick={() => setSelectedArt(art)}
+            onClick={() => {
+                setSelectedArt(art);
+                setCurrentArtIndex(index);
+            }}
           >
             <img src={art.mainImg} alt={art.title} />
             <div className="hover-text"> <p>{art.title}</p></div>
