@@ -3,19 +3,33 @@ import pieces from './Pieces'
 import { useState, useRef, useEffect  } from 'react';
 import Masonry from 'masonry-layout';
 import './artsub.css';
+import Modal from './Modal';
 
 export default function ArtSubContent({genre}) {
     const [selectedArt, setSelectedArt] = useState(null);
+    const [currentArtIndex, setCurrentArtIndex] = useState(null);
     const masonryRef = useRef(null);
     const filteredArtworks = pieces.filter(art => art.genre === genre);
 
+    const handleNext = () => {
+        if (currentArtIndex < filteredArtworks.length - 1) {
+          setCurrentArtIndex(currentArtIndex + 1);
+        }
+      };
+    
+      const handlePrevious = () => {
+        if (currentArtIndex > 0) {
+          setCurrentArtIndex(currentArtIndex - 1);
+        }
+      };
+
     useEffect(() => {
         if (masonryRef.current) {
-            const masonry = new Masonry(masonryRef.current, {
+            new Masonry(masonryRef.current, {
                 itemSelector: '.artwork',
                 gutter: 1,
                 originRight: false,
-                columnWidth: 25
+                columnWidth: 20
             });
         }
     }, [filteredArtworks]);
@@ -36,12 +50,14 @@ export default function ArtSubContent({genre}) {
           </div>
         ))}
       </div>
-      {/* {selectedArt && (
+      {selectedArt && (
         <Modal 
           art={selectedArt} 
+          onNext={handleNext}
+          onPrevious={handlePrevious}
           onClose={() => setSelectedArt(null)} 
         />
-      )} */}
+      )}
     </>
   )
 }

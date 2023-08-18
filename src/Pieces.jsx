@@ -8,7 +8,7 @@ const pieces = [
 
     {title: 'Fox Diagram', genre: 'Graphic', media: 'Procreate', date: 'July 2023', size: '2106px 1364px', awards: [], description: "Created for the Brown Language and Thought Lab, for Gabor Brody's studies in place of imagery of an animoji of a fox.", mainImg: '/art/graphic/foxdax.png', secondaryImgs: []},
     
-    {title: 'Fox and Pig', genre: 'Graphic', media: 'Procreate', date: 'July 2023', size: '1122px x 604px', awards: [], description: "Created for the Brown Language and Thought Lab, for Gabor Brody's studies in place of imagery of Piglet and Tigger.", mainImg: '/art/graphic/carduck.png', secondaryImgs: ['/art/graphic/bicycles.png']},
+    {title: 'Tiger and Pig', genre: 'Graphic', media: 'Procreate', date: 'July 2023', size: '1122px x 604px', awards: [], description: "Created for the Brown Language and Thought Lab, for Gabor Brody's studies in place of imagery of Piglet and Tigger.", mainImg: '/art/graphic/carduck.png', secondaryImgs: ['/art/graphic/bicycles.png']},
 
     {title: 'Catch the Marble! (CU9)', genre: 'Graphic', media: 'Procreate, Illustrator', date: 'July 2023', size: '2048px x 2048px', awards: [], description: 'A Facebook ad advertising the CU9 study for the BLT Lab.', mainImg: '/art/graphic/cu9.gif', secondaryImgs: []},
 
