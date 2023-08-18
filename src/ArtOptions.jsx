@@ -5,7 +5,7 @@ import React from 'react';
 const options = [
         { name: 'Graphic Design', to: 'art/graphicDesign', component: <ArtSubContent genre='Graphic'/> },
         { name: 'Illustration', to: 'art/illustration', component: <ArtSubContent genre='Illustration'/> },
-        { name: 'Mixed Media, Digital', to: 'art/mixedmediadigi', component: <ArtSubContent genre='MixDig'/> },
+        { name: 'Mixed Media, Digital', to: 'art/mixedmediadigi', component: <ArtSubContent genre='Mixdig'/> },
         { name: 'Mixed Media, Traditional', to: 'art/mixedmediatrad', component: <ArtSubContent genre='Mixtrad' /> },
         { name: 'Painting', to: 'art/painting', component: <ArtSubContent genre='Paint'/>},
         { name: 'Printmaking', to: 'art/printmaking', component: <ArtSubContent genre='Print'/> },
