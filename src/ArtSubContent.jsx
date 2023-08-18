@@ -1,6 +1,7 @@
 import React from 'react'
 import pieces from './Pieces'
 import { useState, useRef, useEffect  } from 'react';
+import imagesLoaded from 'imagesloaded';
 import Masonry from 'masonry-layout';
 import './artsub.css';
 import Modal from './Modal';
@@ -25,13 +26,15 @@ export default function ArtSubContent({genre}) {
 
     useEffect(() => {
         if (masonryRef.current) {
-            new Masonry(masonryRef.current, {
-                itemSelector: '.artwork',
-                gutter: 1,
-                originRight: false,
-                columnWidth: 20
-            });
-        }
+            imagesLoaded(masonryRef.current, function () {
+                new Masonry(masonryRef.current, {
+                    itemSelector: '.artwork',
+                    gutter: 1,
+                    originRight: false,
+                    columnWidth: 20
+                });
+            }
+    )}
     }, [filteredArtworks]);
 
 
