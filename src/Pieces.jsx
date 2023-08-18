@@ -50,57 +50,78 @@ const pieces = [
 
     {title: 'For My Favorite People', genre: 'Mixdig', media: 'Photoshop, Illustrator, Indesign, Embroidery Floss, Gel Pen, Ink on Paper', date: 'April 2023', size: '2" x 5.75"', awards: [], description: "Each page contains stolen art, writing, and memes from various artists and poets that I reworked. The only parts of it that are really my own work are the title, dedication, and the little gel pen doodles. I made 20 of these to give to my friends, because as the title would suggest it is “For My Favorite People.” Each page contains several poems/posts/memes/artwork centered around the theme of platonic love and appreciation because I wanted my friends to know how much I care about them. Some of the writing is sideways/upsidedown/obscured so you have to turn it around a bit and spend some time getting all of it, but I know that can be visually inaccessible so I also printed a lil list of all the included content along with each book.", mainImg: '/art/mixeddigi/bookfront.png', secondaryImgs: ['/art/mixeddigi/book1.jpg', '/art/mixeddigi/book2.jpg', '/art/mixeddigi/bookpage1.png', '/art/mixeddigi/bookpage2.png', 'public/art/mixeddigi/bookpage3.png', 'public/art/mixeddigi/bookpage4.png']},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Little Friends (Cranes)', genre: 'Mixdig', media: 'Illustrator, Plexiglass, Wire, Lasercutter', date: 'March 2023', size: '18" x 24"', awards: [], description: "Cranes uses the simple material of colored plexiglass to experiment with the effects of light and shape on color. Inspired by the art form of origami (which I partake in regularly), and the paper stars that hang from the window of my childhood bedroom, Cranes indulges in the simple pleasure of creating small beauties in simple spaces, like the single window in a college dorm room. Over 60 cranes were created in pink, yellow, and blue, and only those with sturdy, non-broken openings were used for this project. The rest were given as gifts to my friends :).", mainImg: '/art/mixeddigi/cranesangle.JPG', secondaryImgs: ['/art/mixeddigi/cranesstraight.JPG']},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Dissolve', genre: 'Mixdig', media: 'Photoshop, Photography, Semi-Gloss Paper', date: 'March 2023', size: '18" x 22"', awards: [], description: "This piece serves as a first experiment with creating a larger project through mostly digital means. I started by collecting various imagery. The piece creates an emotive quality by focusing on vibrant colors, coupled with the figure's solemn, solitary gaze.", mainImg: '/art/mixeddigi/rgb.JPG', secondaryImgs: []},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
-
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
-
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
-
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
-
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
-
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Smoke, Trees, and Water', genre: 'Mixdig', media: 'Photoshop, Photography', date: 'February 2023', size: '1800px x 1200px', awards: [], description: "These images represent the outcomes of my half of a collaborative work of art (the other half done by Christine Baek). Trees, Smoke, and Water were images I created using the three aforementioned prompts she gave me.", mainImg: '/art/mixeddigi/water.PNG', secondaryImgs: ['/art/mixeddigi/trees.PNG', '/art/mixeddigi/smoke.PNG']},
 
     //MIXEDTRAD
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Portraits of Friends', genre: 'Mixtrad', media: 'Charcoal on Paper and Newsprint', date: 'September 2022', size: '18" x 24" (Michelle) 9" x 12" (other)', awards: [], description: "Portraits of several of my friends that I met in September 2022- Alex, Malcolm, Michelle, and Thomas.", mainImg: '/art/mixedtrad/michelle.jpg', secondaryImgs: ['/art/mixedtrad/alex.jpg', '/art/mixedtrad/malcolm.jpg', '/art/mixedtrad/thomas.jpg']},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Fluid', genre: 'Mixtrad', media: 'Charcoal on Newsprint', date: 'January 2022', size: "4' x 10'", awards: [], description: "A collection of 15 drawing of my favorite people and places, compiled into a 10 foot tall sculpture. A testament to the fluidity of memory.", mainImg: '/art/mixedtrad/fluid.jpg', secondaryImgs: ['/art/mixedtrad/fluidkyra.jpg']},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Banyan Roots', genre: 'Mixtrad', media: 'Black Charcoal, White Charcoal on Purple Construction Paper', date: 'October 2021', size: '9" x 12"', awards: ['Scholastic Art and Writing Awards 2022 - Silver Key'], description: "A drawing of a tree native to South Florida. I love spending time in nature, especially around large trees which provide so much awe and homes to so many plants and animals in our ecosystem.", mainImg: '/art/mixedtrad/banyanroots.jpg', secondaryImgs: []},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'The Growing Stage', genre: 'Mixtrad', media: 'Clay, Watercolor, Ink, Paper, Succulent, Soil, Tin Foil, Wire', date: 'September 2021', size: '5" x 12" x 5"', awards: ['Scholastic Art and Writing Awards 2022 - Gold Key', 'Scholastic Art and Writing Awards 2022 - Gold Portfolio Piece'], description: "This piece explores my relationship with my own emotions and how they interact with my physical body. Emotion- like the materials used to create this piece (air-dry clay, and a living succulent)- is ephemeral and passes in cycles even when very strongly felt. With this piece, the ephemeral aspects interact with the tangible, as the body and the plant can be touched, but the piece will one day deteriorate and die. I also explore new ways to convey my emotional expression- vibrant colors overlay poetry, which I wrote and then ripped into pieces and painted over. Thus, even feelings felt deeply can remain unobservable to the viewer.", mainImg: '/art/mixedtrad/growingstage.JPG', secondaryImgs: ['/art/mixedtrad/growingstagefull.jpg']},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Anatomical Studies', genre: 'Mixtrad', media: 'Graphite on Newsprint', date: 'July 2021', size: '10" x 10" to 18" x 24"', awards: [], description: "Anatomical studies of figure model and myself.", mainImg: '/art/mixedtrad/figureOtis.jpg', secondaryImgs: ['/art/mixedtrad/meOtis.jpg', '/art/mixedtrad/anatomyOtis.jpg']},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Flow', genre: 'Mixtrad', media: 'Acrylic, emprobidery Floss, Dye', date: 'July 2021', size: '24" x 36"', awards: ['Scholastic Art and Writing Awards 2022 - Gold Key', 'Scholastic Art and Writing Awards 2022 - Gold Portfolio Piece'], description: "I created this piece over the summer, largely while I had no access to the internet or my home. In it, I depict a state of emotional flow, in which one feels fully connected to themselves. Water joins things, and thus a figure submerged in water is joined to themself. The heart is placed on the outside of the body- done in embroidery- and wraps around the figure to portray emotional vulnerability, and the knowledge a person gains when they are finally in tune with themself. With this piece, I emphasize the beauty of understanding oneself in an honest and self-revealing way.", mainImg: '/art/mixedtrad/flow.jpg', secondaryImgs: ['/art/mixedtrad/flowface.jpg', '/art/mixedtrad/flowheart.jpg']},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Cycle of Rebirth', genre: 'Mixtrad', media: 'Oil Paint, Yarn, Dye on Newspaper', date: 'May 2021', size: "5'x 5'", awards: ['Scholastic Art and Writing Awards 2022 - Gold Key', 'Scholastic Art and Writing Awards 2022 - Gold Portfolio Piece'], description: "In this piece, the body is vibrant and holy, and from it emerges vines made of yarn. The old self falls from the new self (the lower figure) as one not only understands themself now but who they want to become. This causes an epiphany and thus a “Rebirth”. While this can feel like a religious experience, people go through many cycles of realization and remake themselves, which is why the composition and flying birds encircle the figure. The process of rebirth is ongoing, and so is the piece.", mainImg: '/art/mixedtrad/CycleRebirth.jpg', secondaryImgs: ['/art/mixedtrad/cycledetail.JPG']},
 
-    //PUBLIC WORKS
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Cliff', genre: 'Mixtrad', media: 'Soft Pastel on Construction Paper', date: 'February 2020', size: '9" x 12"', awards: ['Scholastic Art and Writing Awards 2022 - Honorable Mention'], description: "A figure drawing of Cliff, a model for both my middle and high school for many years, beloved by students.", mainImg: '/art/mixedtrad/cliff.jpg', secondaryImgs: []},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: "My Father's Shoes", genre: 'Mixtrad', media: 'Colored Pencil on Black Construction Paper', date: 'March 2019', size: '9" x 12"', awards: [], description: "A life drawing of my father's shoes.", mainImg: '/art/mixedtrad/shoes.jpg', secondaryImgs: []},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+     //PUBLIC WORKS
+    {title: 'Behind the Mountain', genre: 'Pub', media: 'Chalk Art on Brick, Watercolor on Paper', date: 'April 2022', size: "10' x 8'", awards: ['Books Art and Music Festival - Chalk Art Winner'], description: "A fantastical drawing of a large deet in a small forest whose front hooved is being clung onto by a small child, collaboration with Gyongy Lili Szaszvarosi.", mainImg: '/art/murpub/bamdeer.jpg', secondaryImgs: ['/art/murpub/bamdeerpaint.JPG']},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: "Kyra's Street Painting", genre: 'Pub', media: 'Chalk Art on Concrete, FireAlpaca', date: 'February 2022', size: "10' x 10'", awards: [], description: "Designed by Kyra Kramer, this street painting depicts a girl looking back at the audience while her hummingbird comes to life off the page. Drawn for te Lake Worth Street Painting Festival. Collaboration with Abigail Hart, Gabrielle Sanchez, Kyra Kramer.", mainImg: '/art/murpub/kyraspf.JPG', secondaryImgs: ['/art/murpub/kyradesign.PNG']},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: "Lili's Street Painting", genre: 'Pub', media: 'Chalk Art on Concrete, Procreate', date: 'February 2022', size: "8' x 10'", awards: [], description: "Designed by Gyongy Lili Szaszvarosi, this street painting depicts two figures posed oppositely looking towards each other, one representing the sun and one representing the moon. Collaboration with Lauren Schram, Gabrielle Sanchez, Gyongy Lili Szaszvarosi.", mainImg: '/art/murpub/lilimural.jpg', secondaryImgs: ['/art/murpub/lildesign.JPG']},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Good Thyme Gardening Club Mural', genre: 'Pub', media: 'Outdoor House Paint on Concrete Wall', date: 'December - February 2022', size: " 20' x 12'", awards: [], description: "Designed by Hana Piporin and painted with over 2 dozen students from the Mural Painting Society in collaboration with the Good Thyme Garden Club at Dreyfoos School of the Arts. Beautifying the areas near student gardens and adding vibrancy to the campus.", mainImg: '/art/murpub/gtgcm.jpg', secondaryImgs: []},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Freedom Shores Elementary School Mural', genre: 'Pub', media: 'Outdoor House Paint on Concrete Wall', date: 'October 2021', size: "20' x 10'", awards: [], description: "The eagle mascot painted for my elementary school, Freedom Shores.", mainImg: '/art/murpub/fseagle.jpg', secondaryImgs: []},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Palm Beach Gardens High School Mural', genre: 'Pub', media: 'Outdoor House Paint on Concrete Wall', date: 'June - September 2021', size: "40' x 24'", awards: [], description: "Designed by myself and Gyongy Lili Szaszvarosi and painted by over 2 dozen students from the Dreyfoos Mural Painting Society, this mural depicts the mascot  and slogans of Palm Beach Gardens High School.", mainImg: '/art/murpub/pbgm.jpg', secondaryImgs: []},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Love Comes Naturally Mural', genre: 'Pub', media: 'Outdoor Paint on Concrete', date: 'March 2021', size: "70' x 10'", awards: ['West Palm Beach Downtown Development Authority - $5000 stipend', 'Scholastic Art and Writing Awards 2022 - Gold Key'], description: "Our design concept reflects three different forms of love: familial, romantic and platonic. Our design includes diverse figures, which represents the idea that love can be expressed in many ways, between all people. Collaboration with Gyongy Lili Szaszvarosi and Kyra Kramer", mainImg: '/art/pub/midlcnm.jpg', secondaryImgs: ['/art/murpub/rlcnm.jpg', '/art/murpub/llcnm.jpg', '/art/murpub/lcnmdesign.PNG', '/art/murpub/kyralililcnm.JPG']},
 
-    {title: '', genre: '', media: '', date: '', size: '', awards: [], description: "", mainImg: '', secondaryImgs: []},
+    {title: 'Goddess of the Earth', genre: 'Pub', media: 'Chalk Art on Concrete', date: 'February 2020', size: "8' x 10'", awards: [], description: "The goddess of Earth holding her creation, a floating island. Painted for the Lake Worth Street Painting Festival in collaboration with Kyra Kramer and Gyongy Lili Szaszvarosi.", mainImg: '/art/murpub/spf2020.jpg', secondaryImgs: []},
+
+    {title: 'Dancers', genre: 'Pub', media: 'Acrylic on Brick', date: 'May - September 2019', size: "10' x 5'", awards: [], description: "Painting of a diverse group of dancers from Loggers Run Community Middle School.", mainImg: '/art/murpub/dancers.png', secondaryImgs: ['/art/murpub/dancerpartner.jpg']},
+
+    {title: 'Flying Whale', genre: 'Pub', media: 'Chalk Art on Concrete', date: 'April 2019', size: "8' x 8'", awards: [], description: "Painted for the Books, Art, and Music Festival in collaboration with Kyra Kramer.", mainImg: '/murpub/son.JPEG', secondaryImgs: []},
+
+    //PAINT
+    {title: 'Nature', genre: 'Paint', media: 'Acrylic on Paper', date: 'June 2023', size: '6" x 8"', awards: [], description: "SImple paintings of oranges and lilypads.", mainImg: '/art/paint/oranges.png', secondaryImgs: ['/art/paint/lilypads.png']},
+
+    {title: 'Me', genre: 'Paint', media: 'Acrylic on Paper', date: 'June 2023', size: '8" x 10", 12" x 10"', awards: [], description: "Paintings of myself, because I am my most accessible subject.", mainImg: '/art/paint/me.png', secondaryImgs: ['/art/paint/mebig.png']},
+
+    {title: 'Animals', genre: 'Paint', media: 'Acrylic on Paper', date: 'May - June 2023', size: '4" x 6" - 8" x 10"', awards: [], description: "Paintings of various animals- from the Ibis' native to my home region to my friend's dog.", mainImg: '/art/paint/ibis.png', secondaryImgs: ['/art/paint/jarettdog.png', '/art/paint/orcas.png']},
+
+    {title: 'Landscapes', genre: 'Paint', media: 'Acrylic on Paper', date: 'June 2023', size: '6" x 8" - 10" x 12"', awards: [], description: "Various landscape studies.", mainImg: '/art/paint/coralreef.png', secondaryImgs: ['/art/paint/ship.png', '/art/paint/tallahassee.png', '/art/paint/lilmom.png']},
+
+    {title: 'Coloration and Adaptive Evolution', genre: 'Paint', media: 'Gouache, Watercolor on Paper', date: 'July 2022', size: '9" x 12"', awards: [], description: "Several animals, painted for the Science Ambassador Scholarship. I made my video about apadptive coloration in animals.", mainImg: '/art/pain/mandarinduck.jpg', secondaryImgs: ['/art/paint/mandarinduckcow.jpg', '/art/paint/bird.jpg']},
+
+    {title: 'Entangled', genre: 'Paint', media: 'Watercolor, Colored Pencil, Block Print, Petals on Paper', date: 'March 2022', size: 'Acrylic on Paper', awards: [], description: "In reflecting on high school and my life, I wanted to create a piece that combined all of the concepts and media that have been influential in my artistic development. From my first obsession with the layering of watercolor as a sophomore to the methodical carvings of my junior year, each of these media influenced new phases as I grew and explored. I also integrated poetry within the glowing area circles to discuss my thoughts about the past and future. In my sophomore and junior years, my final concentration pieces were large paintings in vibrant color schemes with two figures interacting. Additionally, both concentrations dealt with nature as a motif to represent the ephemerality of emotional expression. In sophomore year, I focused on how these emotional cycles related externally to others, and in junior year I turned the concept inward towards the self. Therefore, in Entangled, I combine these concepts, viewing the past and future selves as both an internal construct and an external reflection of the different people I have been and will become, connected by the emotional core of the self: the heart, in the present day.", mainImg: '/art/paint/entangled.jpg', secondaryImgs: []},
+
+    {title: 'Nature Stool', genre: 'Paint', media: 'Acrylic on Wood', date: 'December 2021', size: '12" x 24" x 12"', awards: [], description: "A gift to my painting teacher for three years of highschool.", mainImg: '', secondaryImgs: []},
+
+    {title: 'Daydream', genre: 'Paint', media: 'Watercolor, Acrylic, Soft Pastel, Gold Leaf on Paper', date: 'August 2019', size: '18" x 24"', awards: ['Scholastic Art and Writing Awards 2020 - Gold Key'], description: "A serene and whimiscal painting, based on a similar concept I created in 2017.", mainImg: '/art/paint/daydream.jpg', secondaryImgs: []},
+
+    //PRINT
+    {title: 'The Florida Grasshopper Sparrow', genre: 'Print', media: 'Block Printing Ink on Paper', date: 'July 2021', size: '18" x 24"', awards: [], description: "The bird depicted is the Florida Grasshopper Sparrow, which is currently in danger of extinction. The slow deterioration of the prints is a physical representation of the process of extinction, to show the reality of extinction and the effects of human induced habitat change on animals. Grasslands used to cover over 3 million acres of Florida's land, but because of human development a large portion of this grassland no longer exists, and the Florida Grasshopper Sparrow's habitat has declined by 85% and been replaced by agricultural lands.", mainImg: '/art/print/fgsfull.jpg', secondaryImgs: ['/art/print/fgs.jpg', '/art/print/fgsexp.jpg']},
+
+    {title: 'My Simple Dream', genre: 'Print', media: 'Akua Ink and Watercolor on Paper', date: 'October 2020', size: '8.5" x 11"', awards: ['Scholastic Art and Writing Awards 2021 - Honorable Mention'], description: "A monoprint of the life I have always dreamed for myself, simple and quiet.", mainImg: '/art/print/cottage.jpg', secondaryImgs: []},
+
+    {title: 'Gaze', genre: 'Print', media: 'Akua Ink on Paper', date: 'September 2020', size: '8" x 8"', awards: ['Scholastic Art and Writing Awards 2021 - Gold Key'], description: "One of my first monoprints, carefully drawn to illicit a mysterious, emotive quality.", mainImg: '/art/print/portrait.jpg', secondaryImgs: ['/art/print/figureportrait.jpg']},
+
+    {title: 'Somewhere', genre: 'Print', media: 'Akua Ink on Paper', date: 'September 2020', size: '6" x 8"', awards: [], description: "One of my first monoprints, experimenting with text.", mainImg: '/art/print/somewhere.jpg', secondaryImgs: []}
+
 ]
 
 export default pieces;

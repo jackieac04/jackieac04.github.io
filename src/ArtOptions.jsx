@@ -3,13 +3,13 @@ import React from 'react';
 
 
 const options = [
-        { name: 'Mixed Media, Traditional', to: 'art/mixedmediatrad', component: <ArtSubContent name='Mixed Media, Traditional' /> },
-        { name: 'Murals', to: 'art/murals', component: <ArtSubContent name='Murals'/> },
-        { name: 'Painting', to: 'art/painting', component: <ArtSubContent name='Painting'/>},
-        { name: 'Printmaking', to: 'art/printmaking', component: <ArtSubContent name='Printmaking'/> },
-        { name: 'Graphic Design', to: 'art/graphicDesign', component: <ArtSubContent name='Graphic Design'/> },
-        { name: 'Illustration', to: 'art/illustration', component: <ArtSubContent name='Illustration'/> },
-        { name: 'Mixed Media, Digital', to: 'art/mixedmediadigi', component: <ArtSubContent name='mixed digital'/> }
+        { name: 'Graphic Design', to: 'art/graphicDesign', component: <ArtSubContent genre='Graphic'/> },
+        { name: 'Illustration', to: 'art/illustration', component: <ArtSubContent genre='Illustration'/> },
+        { name: 'Mixed Media, Digital', to: 'art/mixedmediadigi', component: <ArtSubContent genre='MixDig'/> },
+        { name: 'Mixed Media, Traditional', to: 'art/mixedmediatrad', component: <ArtSubContent genre='Mixtrad' /> },
+        { name: 'Painting', to: 'art/painting', component: <ArtSubContent genre='Paint'/>},
+        { name: 'Printmaking', to: 'art/printmaking', component: <ArtSubContent genre='Print'/> },
+        { name: 'Public Works', to: 'art/murals', component: <ArtSubContent genre='Pub'/> }
   ];
 
   export default options;
