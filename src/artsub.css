@@ -147,7 +147,7 @@ height: 10%;
 }
 @media (max-aspect-ratio: 17/15) {
     .artwork {
-        width: 22%;
+        width: 29%;
         padding: 2%;
         padding-bottom: 0%;
         display: flex;
