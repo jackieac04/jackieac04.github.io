@@ -186,6 +186,25 @@
   .app-container {
     background-color: #154665;
   }
+
+  .home-link, .art-link, .cs-link {
+    font-size: 4vw;
+  }
+
+  .art, .cs, .welcome {
+    transform: translateY(25%);
+  }
+
+
+.sub-routes {
+  left: -40%;
+  font-size: 3vw;
+  min-width: 15%;
+}
+
+.sub-routes a {
+  font-size: 3vw;
+}
 }
 
 .sub-routes {

@@ -80,19 +80,19 @@
         z-index: 5;
       }
 
-      .ig-link, .discord-link, .github-link {
+    .ig-link, .discord-link, .github-link {
         position: absolute;
         top: 74%;
         bottom: 88%;
         z-index: 5;
-        }
+    }
         
-        .gmail, .linkedin, .ig, .discord, .github {
-            width: 95%;
-          }
+    .gmail, .linkedin, .ig, .discord, .github {
+        width: 95%;
+    }
 
-          .butterflies {
-            display: none;
-            opacity: 0;
-          }
+    .butterflies {
+        display: none;
+        opacity: 0;
+    }
   }
