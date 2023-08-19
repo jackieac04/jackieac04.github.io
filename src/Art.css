@@ -214,9 +214,13 @@ h2 > p {
     }
   }
 
+@media (max-aspect-ratio: 578/667) {
+    .about {
+        transform: translateY(-140%);
+    }
+  }
 
 @media (max-aspect-ratio: 17/15) {
-
     .main {
         height: 100%;
     }
@@ -228,7 +232,6 @@ h2 > p {
     text-align: center;
     padding: 2%;
     margin-bottom: 2%;
-    transform: translateY(-140%);
     }
 
     .info {
