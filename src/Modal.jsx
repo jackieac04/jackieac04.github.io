@@ -42,7 +42,6 @@ export default function Modal({ art, onNext, onPrevious, onClose }) {
                         {art.awards && <h4>{art.awards}</h4>}
                         <p>{art.description}</p>
                     </div>
-            <button className="close-button" onClick={onClose}>X</button>
         </div>
         <div className="buttons-art">
                 <button className="prev-button" onClick={onPrevious}>Previous</button>
