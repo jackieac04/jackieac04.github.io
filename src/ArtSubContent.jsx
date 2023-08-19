@@ -41,7 +41,7 @@ export default function ArtSubContent({genre}) {
                     itemSelector: '.artwork',
                     gutter: 1,
                     originRight: false,
-                    columnWidth: 20
+                    columnWidth: 30
                 });
             }
     )}

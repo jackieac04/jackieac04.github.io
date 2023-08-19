@@ -205,6 +205,7 @@
 .sub-routes a {
   color: var(--bg-color);
   padding: 10% 14%;
+  font-size: 1.5vw;
   text-decoration: none;
   display: block;
   text-align: center;

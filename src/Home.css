@@ -71,7 +71,7 @@
     transform: translateY(-10px);
   }
   
-  @media (max-aspect-ratio: 9/15) {
+  @media (max-aspect-ratio: 15/15) {
 
     .gmail-link, .linkedin-link {
         position: absolute;

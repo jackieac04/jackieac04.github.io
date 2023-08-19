@@ -50,9 +50,3 @@ img.visible {
         transform: translateY(-100%);
     }
 }
-
-@media (max-aspect-ratio: 11/15) {
-    .dark_mode_label>img {
-        transform: translateY(-20%);
-    }
-}
