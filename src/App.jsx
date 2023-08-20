@@ -1,5 +1,5 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom' 
-import './app.css'
+import './App.css'
 import Home from './Home'
 import Header from '/headfoot/Header_.png'
 import Header2 from '/headfoot/Header.png'
