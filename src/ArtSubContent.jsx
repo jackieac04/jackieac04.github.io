@@ -39,7 +39,7 @@ export default function ArtSubContent({genre}) {
             imagesLoaded(masonryRef.current, function () {
                 new Masonry(masonryRef.current, {
                     itemSelector: '.artwork',
-                    gutter: 5,
+                    gutter: 3,
                     originRight: false,
                     columnWidth: 25
                 });
