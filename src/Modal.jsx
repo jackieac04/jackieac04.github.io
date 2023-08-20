@@ -7,7 +7,7 @@ export default function Modal({ art, onNext, onPrevious, onClose }) {
     const [mainImage, setMainImg] = useState(art.mainImg);
 
     useEffect(() => {
-        // Reset curImage state whenever the art prop changes
+        // Reset mainImage state whenever the art prop changes
         setMainImg(art.mainImg);
     }, [art]);
 

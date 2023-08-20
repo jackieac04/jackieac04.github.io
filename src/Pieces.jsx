@@ -1,5 +1,3 @@
-import React from 'react';
-
 const pieces = [
     //GRAPHICS
     {title: 'BLT Lab Poster', genre: 'Graphic', media: 'Procreate, Illustrator', date: 'August 2023', size: '8.5" x 11"',  description: "Two version of a pster for BLT to display and attract potential study participants. One has rip off tabs and one does not.", mainImg: '/art/graphic/PosterNoTab.png', secondaryImgs: ['/art/graphic/postertear.png']},

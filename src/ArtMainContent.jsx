@@ -1,4 +1,5 @@
 import React from 'react';
+import './art.css';
 
 export default function ArtMainContent() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import Option from './Option';
-import './Art.css';
+import './art.css';
 
 export default function Nav({options}) {
 
