@@ -21,7 +21,7 @@ export default function Modal({ art, onNext, onPrevious, onClose }) {
                 <div className="modal-content" onClick={e => e.stopPropagation()}>
                     <div className="img-content">
                         <div className="main-img">
-                            <img src={mainImage} alt={art.title} />
+                            <img className='img-main' src={mainImage} alt={art.title} />
                         </div>
                         {art.secondaryImgs.length > 0 && <div className="sec-imgs">
                             <img src={art.mainImg} alt={art.title} onClick={() => handleImageClick(art.mainImg)} />
@@ -35,12 +35,14 @@ export default function Modal({ art, onNext, onPrevious, onClose }) {
     ))}
                         </div>}
                     </div>
+                    
                     <div className="content">
                         <h2>{art.title}</h2>
                         <h4>{art.date}</h4>
                         <h4>{art.media}</h4>
                         {art.awards && <h4>{art.awards}</h4>}
                         <p>{art.description}</p>
+                        
                     </div>
         </div>
         <div className="buttons-art">

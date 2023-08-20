@@ -54,20 +54,23 @@
 .modal-content {
     display: flex;
     z-index: 10;
-    width: 95%;
     margin: 2%;
+    max-height: 90vh;
     background-color: var(--text-color);
+    overflow-y: auto;
 }
 
 .sec-imgs {
     display: flex; /* Lay out images horizontally */
     justify-content: flex-start; /* Align images to the start */
     flex-wrap: wrap; /* Allow images to wrap to the next line if there are many */
-    gap: 5px; /* Space between images */
+    gap: 2vw; /* Space between images */
+    max-height: 15vh;
+    padding-bottom: 1vh;
 }
 
 .sec-imgs img {
-    height: 70px; /* Adjust this value as needed */
+    height: 15vh; 
     width: auto; 
 }
 
@@ -78,20 +81,20 @@
 .img-content {
     display: block;
     flex-direction: column;
-    min-width: 50%;
-    max-width: 60%;
+    min-width: 45%;
+    max-width: 60vw;
     padding: .5%;
-    padding-right: 3%;
+    max-height: 75vh; /* Adjust this value based on your design needs */
 }
 
-.main-img img {
-    width: 100%;
-}
-
-.modal-content img {
-    position: relative;
+.img-main {
     padding: 2%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 65vh;
+}
+
+.main-img {
+    padding-right: 3vw;
 }
 
 .modal-content button {
@@ -105,6 +108,7 @@
     display: flex;
     flex-direction: column;
     color: var(--bg-color);
+    padding-right: 1%;
 }
 
 .modal-overlay {
@@ -112,13 +116,15 @@
     z-index: 8;
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0%;
+    position: fixed; /* Change from absolute to fixed */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center children vertically */
-    align-items: center; /* Center children horizontally */
-
+    align-items: center; 
 }
 
 .prev-button, .next-button {
@@ -148,11 +154,11 @@
     }
 
     .modal-content {
-        font-size: 1.7vw;
+        font-size: 2vw;
     }
 
     .sec-imgs img {
-        height: 30px; /* Adjust this value as needed */
+        height: 8vh; /* Adjust this value as needed */
         width: auto; 
     }
   }

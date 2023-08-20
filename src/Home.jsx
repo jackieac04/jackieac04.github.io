@@ -15,7 +15,7 @@ export default function Home() {
         Definitely send me a message if you can find all of the animals on this page.
         That's all for now; happy exploring!' " />
         <div className='web-content'>
-            <img className="butterflies" src={ Butterflies } alt="a gif of butterflies overlaying the background image." />
+            <img className="butterflies" src={ Butterflies } alt="a gif of butterflies overlaying the background image." draggable="false" />
             <Contact gmailLink={'gmail-link'} gmailIcon={'gmail'} linkedinLink={'linkedin-link'} linkedinIcon={'linkedin'} igLink={'ig-link'} igIcon={'ig'}
              discordLink={'discord-link'} discordIcon={'discord'} githubLink={'github-link'} githubIcon={'github'}/>
         </div>
