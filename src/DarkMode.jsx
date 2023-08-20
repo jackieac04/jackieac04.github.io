@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Sun from "/icons/Sun.png";
 import Moon from "/icons/Moon.png";
-import "./darkMode.css";
+import "./DarkMode.css";
 
 export default function DarkMode() {
     const [theme, setTheme] = useState('light'); // default to light
