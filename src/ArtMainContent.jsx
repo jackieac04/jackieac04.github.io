@@ -1,5 +1,5 @@
 import React from 'react';
-import './art.css';
+import './Art.css';
 
 export default function ArtMainContent() {
   return (

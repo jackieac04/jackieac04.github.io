@@ -1,5 +1,5 @@
 import { Link, Outlet } from 'react-router-dom';
-import './art.css';
+import './Art.css';
 
 function Option({ name, to }) {
 
