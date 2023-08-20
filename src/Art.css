@@ -44,8 +44,8 @@
     text-align: center;
     background-color: var(--bg-color-lowo);
     padding: 1%;
-    background: op;
 }
+
 .awards ul li {
     color: var(--text-color);
     font-size: 70%;
@@ -189,7 +189,6 @@ h2 > p {
 }
 
 @media (max-aspect-ratio: 13/15) {
-
     .main {
         height: 80%;
     }
@@ -216,7 +215,8 @@ h2 > p {
 
 @media (max-aspect-ratio: 578/667) {
     .about {
-        transform: translateY(-140%);
+        transform: translateY(-120%);
+        font-size: 3.5vw;
     }
   }
 

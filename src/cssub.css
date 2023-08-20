@@ -3,9 +3,7 @@
 }
 
 [data-theme='dark'] {
-    --bg-color: #152837;
     --bg-color-lowo: rgb(21, 40, 55, .85);
-    --text-color: #9bc0dc;
 }
 
 .sub-main {
