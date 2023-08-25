@@ -1,6 +1,7 @@
 import React from 'react';
 import CSSubContent from './CSSubContent.jsx';
 
+/* Page descriptions */
 const posterdesc = "August - September 2023: I never knew how surrounded with visual imagery in the form of posters a person could be until I came to Brown. At the beginning of freshman year I had the vague idea that it could be fun to collect them, but I didn't turn it into a project until March 2023. Since then, I have been collecting posters with an intent to create an archive of the shifting events, ideas, and styles of the Brown student body, in the form of a large collection of physical posters stored temporarily in my dorm with long-term plans to donate it to the John Hay Library. While Brown does already have a digital repository, it is quite vast, contains few posters, and is somewhat difficult to access, search through, and contribute to in the ways that I am primarily interested in. This is why I've decided to make my own poster archive, where users can easily upload posters, and search and sort by tons of different factors like colors, organization, and style to analyze how the opinions and aesthetics of the Brown community have evolved over time. This is currently in progress, so check back later to see the finished result!";
 
 const thisdesc = "July - August 2023: I created this website in 2023 partially as a means to host my portfolio, while learning new skills in both CS and art. In order to create a functional website made mostly of hand-drawn components, I knew I would need to create specifications that remained consistent for every page. The home page defines the size and positioning of all the other pages (3240px x 1920px) so that every element remains both visually consistent and functional across the pages. Each component was first designed visually before I determined what components would be necessary to create them, with the painting on the home page totaling in over 30 hours of work between painting and structure. ";
@@ -11,8 +12,8 @@ const tetdesc = ' October - December 2022: Clones of the popular games Tetris an
 
 const dttpdesc = "February - March 2023: Decision Tree and Travel Planner are implementations of classic structures and alogrithms, the binary search tree and BFS and Dijkstra's respectively. Decision Tree, built collaboratively with Huda Abdulrasool, explores how a model can be used to determine the most likely outcomes for choices within large datasets. Travel Planner, built collaboratively with Chai Harsha, explores how BFS and Dijkstra can be used to determine routes between cities with specifications of looking for the shortest, fastest, or cheapest route.";
 
+/* subpages defined by name, link to, tech used, images, ods fpr imgs and descritption, a description, and the enxt and previous pages */
 const pages = [
-
         // { name: 'Poster Archive - Coming soon', to: '/cs/poster', tech: null, imgs: ['/cssub/posterdesign.png'], imgsid: 'poster', description: posterdesc, descid: 'posterdesc', next: '/cs/this', prev: '/cs/dttp'},
         { name: 'This site!', to:'/cs/this', tech: 'JavaScript (React + SWC), HTML, CSS, VSCode, Procreate', imgs: ['/main/Web.png', '/main/timelapse.gif', '/main/ButterfliesE.gif', '/main/homesketch.png', '/main/artsketch.png'], imgsid: 'this', description: thisdesc, descid: 'thisdesc', next: '/cs/mp', prev: '/cs/dttp' },
         { name: 'Modal Perception', to:'/cs/mp', tech: 'JavaScript (jQuery), HTML, CSS, PHP, VSCode', imgs: ['/cssub/MP7.gif', '/cssub/MP8.gif', '/cssub/MP9.gif'], imgsid: 'mp', description: mpdesc, descid: 'mpdesc', next: '/cs/tetrissus', prev: '/cs/this' },
@@ -20,6 +21,7 @@ const pages = [
         { name: 'Decision Tree, Travel Planner', to:'/cs/dttp', tech: 'Java, IntelliJ', imgs: ['/cssub/dt.gif', '/cssub/tp.png'], imgsid: 'dttp', description: dttpdesc, descid: 'dttpdesc', next: '/cs/this', prev: '/cs/tetrissus' }
   ];
 
+  /* creates a list of options by mapping each page to the subcontent layout */
 const options = pages.map(page => ({
   name: page.name,
   to: page.to,

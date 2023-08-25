@@ -1,6 +1,7 @@
 import React from 'react';
 import './Art.css';
 
+/* Content displayed on the main art page */
 export default function ArtMainContent() {
   return (
     <>

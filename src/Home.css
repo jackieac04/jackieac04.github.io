@@ -1,3 +1,4 @@
+/* sets styles for home page */
 .web, .butterflies {
     width: 100%;
     margin-top: -.8%;
@@ -71,6 +72,7 @@
     transform: translateY(-10px);
   }
   
+  /* styles for mobile devices: butterflies are only displayed on desktop */
   @media (max-aspect-ratio: 15/15) {
 
     .gmail-link, .linkedin-link {

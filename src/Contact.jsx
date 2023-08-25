@@ -5,6 +5,7 @@ import IG from '/icons/IG.png'
 import Discord from '/icons/Discord.png'
 import GitHub from '/icons/GitHub.png'
 
+/* basic layout for display of contact icons */
 export default function ({gmailLink, linkedinLink, igLink, discordLink, githubLink, gmailIcon, linkedinIcon, igIcon, discordIcon, githubIcon}) {
   return (
     <>

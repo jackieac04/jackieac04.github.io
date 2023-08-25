@@ -3,9 +3,11 @@ import Sun from "/icons/Sun.png";
 import Moon from "/icons/Moon.png";
 import "./DarkMode.css";
 
+/* Dark mode button: sets state to dark or light each tome button is pressed so that the page changes color */
 export default function DarkMode() {
     const [theme, setTheme] = useState('light'); // default to light
 
+    /* sets the theme based on the last theme user toggled. If first time on the page, defaults to light. */
     useEffect(() => {
         // Set the initial theme based on the data-theme attribute
         // Retrieve the stored theme from localStorage
@@ -20,23 +22,23 @@ export default function DarkMode() {
             setTheme(currentTheme || 'light');
         }
     }, []);
-
+    // sets dark mode
     const setDarkMode = () => {
         document.querySelector('body').setAttribute('data-theme', 'dark');
         setTheme('dark');
         localStorage.setItem("selectedTheme", "dark");
     }
-
+    // sets light mode
     const setLightMode = () => {
         document.querySelector('body').setAttribute('data-theme', 'light');
         setTheme('light');
         localStorage.setItem("selectedTheme", "light");
     }
-
+    // toggles themse based on if the target it checked or unchecked
     const toggleTheme = e => {
         e.target.checked ? setDarkMode() : setLightMode();
     }
-
+    /* displays either sun or moon icon depepnding on if the theme is dark or light */
     return (
         <div className='dark_mode'>
             <input

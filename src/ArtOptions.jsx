@@ -1,7 +1,7 @@
 import ArtSubContent from './ArtSubContent.jsx';
 import React from 'react';
 
-
+/* List of art subpage routes, defined with a name, a link to the page, and the corresponding component */
 const options = [
         { name: 'Graphic Design', to: 'art/graphicDesign', component: <ArtSubContent genre='Graphic'/> },
         { name: 'Illustration', to: 'art/illustration', component: <ArtSubContent genre='Illustration'/> },

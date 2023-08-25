@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import './artsub.css'
 
-
+/* defines modal content */
 export default function Modal({ art, onNext, onPrevious, onClose }) {
     const [mainImage, setMainImg] = useState(art.mainImg);
 
@@ -10,7 +10,7 @@ export default function Modal({ art, onNext, onPrevious, onClose }) {
         // Reset mainImage state whenever the art prop changes
         setMainImg(art.mainImg);
     }, [art]);
-
+    //when a user clicks an image preview on a modal that image is set as main
     const handleImageClick = (imgSrc) => {
         setMainImg(imgSrc);
     }
@@ -45,6 +45,7 @@ export default function Modal({ art, onNext, onPrevious, onClose }) {
                         
                     </div>
         </div>
+        {/* allows user to navigate between modals */}
         <div className="buttons-art">
                 <button className="prev-button" onClick={onPrevious}>Previous</button>
                 <button className="next-button" onClick={onNext}>Next</button>

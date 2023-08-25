@@ -1,4 +1,5 @@
- .dark_mode {
+/* styling for the dark mode button */
+.dark_mode {
     position: relative;
     left: -37%;
     width: 1%;

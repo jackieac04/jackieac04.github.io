@@ -1,18 +1,16 @@
+// third-party modules
 import { Routes, Route, Link, useLocation } from 'react-router-dom' 
-import './App.css'
-import Home from './Home'
+import React, { useState } from 'react';
+// images
 import Header from '/headfoot/Header_.png'
 import Header2 from '/headfoot/Header.png'
 import Footer from '/headfoot/Footer.png'
-import ArtMain from './ArtMainContent'
-import CSMain from './CSMainContent'
-import Contact from './Contact'
-import DarkMode from './DarkMode'
-import React, { useState } from 'react';
-import artOptions from './ArtOptions';
-import csOptions from './CSOptions';
-import Nav from './Nav.jsx';
+// local modules
+import {Home, ArtMain, CSMain, Contact, DarkMode, artOptions, csOptions , Nav} from './index.jsx'
+// styles
+import './App.css'
 
+/* Displays elements common to all pages: header, footer, app-container and routes all pages through the main page */
 function App() {
   const [showArtSubRoutes, setShowArtSubRoutes] = useState(false);
   const [showCSSubRoutes, setShowCSSubRoutes] = useState(false);
@@ -41,7 +39,7 @@ function App() {
   <Link className="art-link" to='/art'>
     Art
   </Link>
-
+    {/* shows art sub-routes drop down when the art link in top nav is hovered over */}
   {showArtSubRoutes && (
     <div className="sub-routes">
       <Nav options={artOptions}/>
@@ -57,7 +55,7 @@ function App() {
   <Link className="cs-link" to='/cs'>
     CS
   </Link>
-
+    {/* shows cs sub-routes drop down when the cs link in top nav is hovered over */}
   {showCSSubRoutes && (
     <div className="sub-routes">
       <Nav options={csOptions}/>
@@ -67,7 +65,7 @@ function App() {
   </div>
 </div>
     <div className='route-content'>
-
+      {/* all routes (home, art, cs) */}
     <Routes>
       <Route path='/' element={<Home />}/>
 

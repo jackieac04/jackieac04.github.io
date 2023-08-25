@@ -1,3 +1,5 @@
+/* CSS for the app components (root, header and footer, app container) */
+
 :root {
   --bg-color: #9bc0dc;
   --text-color: #152837;
@@ -170,6 +172,7 @@
   left: 28%;
 }
 
+/* size and position changes for smaller screens */
 @media (max-aspect-ratio: 15/15) {
   .route-content {
     width: 100%;

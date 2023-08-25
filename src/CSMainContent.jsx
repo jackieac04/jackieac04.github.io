@@ -1,11 +1,12 @@
 import React from 'react'
-import './Art.css'
 import tetris from '/cssub/tetris.gif'
 import susman from '/cssub/susman.gif'
 import MP7 from '/cssub/MP7.gif'
 import MP9 from '/cssub/MP9.gif'
 import Web from '/main/Web.png'
+import './Art.css'
 
+/* content displayed on the mian cs page */
 export default function CSMainContent() {
   return (
     <>

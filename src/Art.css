@@ -1,3 +1,6 @@
+/* Styles for the main art and cs pages */
+
+/* Defines variables for light mode */
 :root {
     --bg-color: #9bc0dc;
     --bg-color-lowo: rgb(155, 192, 220, .5);
@@ -7,7 +10,7 @@
     --bg-img: url('/bgPages/Art_Page_Light.png');
     --bg-img-p: url('/bgPages/Art_Page_Light_Purple.png');
 }
-
+/* defines variables for dark mode */
 [data-theme='dark'] {
     --bg-color: #152837;
     --bg-color-lowo: rgb(21, 40, 55, .5);

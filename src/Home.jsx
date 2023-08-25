@@ -4,6 +4,7 @@ import Butterflies from '/main/ButterfliesE.gif'
 import Contact from './Contact'
 import './Home.css'
 
+/* content of home page displays main img and link icons */
 export default function Home() {
   return (
     <div className='home-container'>

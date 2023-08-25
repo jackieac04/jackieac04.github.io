@@ -1,6 +1,7 @@
 import React from 'react'
 import './cssub.css'
 
+/* layout for each cs subpage */
 export default function CSSubContent({name, imgs, imgsid, tech, desc, descid, prev, next }) {
   return (
     <>
