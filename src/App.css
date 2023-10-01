@@ -232,6 +232,10 @@ p.cs-text {
   opacity: 1;
 }
 
+.cs-menu-container .sub-routes {
+  left: -320%;
+}
+
 .nav-link {
   color: var(--bg-color);
   padding: 10% 14%;
