@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Sun from "/icons/Sun.png";
 import Moon from "/icons/Moon.png";
 import "./DarkMode.css";

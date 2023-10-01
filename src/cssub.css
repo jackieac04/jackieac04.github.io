@@ -152,6 +152,10 @@
 
     margin-bottom: 2%;
 }
+
+.hyper img{
+    max-width: 100%;
+}
 @media (max-aspect-ratio: 15/15) {
 .buttons {
     position: absolute;

@@ -1,6 +1,6 @@
 // third-party modules
 import { Routes, Route, Link, useLocation } from 'react-router-dom' 
-import React, { useState } from 'react';
+import { useState } from 'react';
 // images
 import Header from '/headfoot/Header_.png'
 import Header2 from '/headfoot/Header.png'
