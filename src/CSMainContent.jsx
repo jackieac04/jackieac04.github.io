@@ -1,4 +1,3 @@
-import React from 'react'
 import tetris from '/cssub/tetris.gif'
 import susman from '/cssub/susman.gif'
 import MP7 from '/cssub/MP7.gif'

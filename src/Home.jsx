@@ -1,4 +1,3 @@
-import React from 'react'
 import Web from '/main/Web.png'
 import Butterflies from '/main/ButterfliesE.gif'
 import Contact from './Contact'

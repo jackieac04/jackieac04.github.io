@@ -36,7 +36,7 @@ export default function ArtSubContent({genre}) {
             setSelectedArt(filteredArtworks[filteredArtworks.length - 1]);
         }
       };
-    //masonry reloads everytime the filtered artowrks reload (when a new subpage is navigated to)
+    //masonry reloads everytime the filtered artworks reload (when a new subpage is navigated to)
     useEffect(() => {
         if (masonryRef.current) {
             imagesLoaded(masonryRef.current, function () {
